@@ -1,12 +1,16 @@
-//
+import React from "react";
 
-class App extends Component {
+class App extends React.Component {
   constructor(props) {
     super(props);
-    state = {};
+    this.state = {};
   }
   render() {
-    return "x";
+    return (
+      <div>
+        <p>yo</p>
+      </div>
+    );
   }
 }
 
