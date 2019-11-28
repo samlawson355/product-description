@@ -3,11 +3,14 @@ import React from "react";
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      product: ""
+    };
   }
+
   render() {
     return (
-      <div>
+      <div id="productDescriptionContainer">
         <p>yo</p>
       </div>
     );
