@@ -9,8 +9,8 @@ CREATE TABLE IF NOT EXISTS products(
   productName TEXT,
   productMaker TEXT,
   productDesc TEXT,
-  productPrice DECIMAL,
-  productRating DECIMAL,
+  productPrice DECIMAL(10,2),
+  productRating DECIMAL(2,1),
   productNumOfRatings INT,
   productNumOfQuestionsAnswered INT
 );
