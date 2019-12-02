@@ -1,3 +1,7 @@
+a {
+  cursor: pointer;
+}
+
 #productDescriptionContainerS {
   display: flex;
   flex-direction: column;
