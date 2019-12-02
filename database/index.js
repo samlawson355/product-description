@@ -10,3 +10,5 @@ const productDB = mysql.createConnection({
 productDB.connect(console.log("connected to DB"));
 
 module.exports = {};
+
+// test
