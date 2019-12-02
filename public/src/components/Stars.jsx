@@ -3,17 +3,17 @@ import StarsDropdown from "./StarsDropdown.jsx";
 
 const Stars = props => {
   return (
-    <div onMouseEnter={props.hoverDropDown} onMouseLeave={props.hoverGoBack}>
-      {props.dropDownDisplayed ? (
-        <div>
-          <StarsDropdown
-            productRating={props.currentProduct.productRating}
-            productNumOfRatings={props.currentProduct.productNumOfRatings}
-          />
-        </div>
-      ) : (
-        "NOT HOVERING"
-      )}
+    <div>
+      <div>{props.currentProduct.productRating}/5</div>
+      <div>
+        <StarsDropdown
+          hoverDropDown={props.hoverDropDown}
+          hoverGoBack={props.hoverGoBack}
+          dropDownDisplayed={props.dropDownDisplayed}
+          productRating={props.currentProduct.productRating}
+          productNumOfRatings={props.currentProduct.productNumOfRatings}
+        />
+      </div>
     </div>
   );
 };
