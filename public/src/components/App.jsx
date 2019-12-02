@@ -23,14 +23,30 @@ class App extends React.Component {
       }
     };
     this.goToProductMaker = this.goToProductMaker.bind(this);
+    this.descriptionCleaner = this.descriptionCleaner.bind(this);
   }
 
-  componentDidMount() {
-    axios({
-      method: "GET",
-      url: `/${this.state.currentProduct.id}`
-    }).then(console.log);
+  descriptionCleaner(desc) {
+    let cleanedDesc = "";
+    let cleanLines = [];
+    let curChar = 0;
+    for (let i = 0; i < desc.length; i++) {
+      if (desc[i] === "+" && desc[i + 1] === "+") {
+        cleanedDesc += desc.slice(curChar, i) + "\n";
+        cleanLines.push(cleanedDesc);
+        cleanedDesc = "";
+        curChar = i + 2;
+      }
+    }
+    return cleanLines;
   }
+
+  // componentDidMount() {
+  //   axios({
+  //     method: "GET",
+  //     url: `/${this.state.currentProduct.id}`
+  //   }).then(console.log);
+  // }
 
   goToProductMaker() {
     alert(
@@ -42,7 +58,7 @@ class App extends React.Component {
     return (
       <div id="productDescriptionContainerS">
         <div id="titleOfProductS">
-          <h1>TITLE</h1>
+          <h1>{this.state.currentProduct.productName}</h1>
         </div>
         <div id="productMakerContainerS">
           <ProductMaker
@@ -55,9 +71,17 @@ class App extends React.Component {
           <Ratings currentProduct={this.state.currentProduct} />
           <QuestionsAnswered currentProduct={this.state.currentProduct} />
         </span>
-        <div id="productPriceS">$5,000,000.99</div>
+        <div id="productPriceS">${this.state.currentProduct.productPrice}</div>
         <div id="productDescriptionTextS">
-          <p>this is the product description</p>
+          <ul>
+            {this.descriptionCleaner(this.state.currentProduct.productDesc).map(
+              (line, id) => (
+                <li key={id} className="productDescriptionLineS">
+                  {line}
+                </li>
+              )
+            )}
+          </ul>
         </div>
       </div>
     );

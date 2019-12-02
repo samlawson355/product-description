@@ -3,7 +3,7 @@ import React from "react";
 const ProductMaker = props => {
   return (
     <div>
-      <a onClick={props.goToProductMaker}>
+      <a className="productMakerS" onClick={props.goToProductMaker}>
         {props.currentProduct.productMaker}
       </a>
     </div>
