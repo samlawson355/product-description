@@ -1,16 +1,17 @@
 import React from "react";
+const axios = require("axios");
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      product: ""
+      currentProductID: null
     };
   }
 
   render() {
     return (
-      <div id="productDescriptionContainer">
+      <div id="productDescriptionContainerS">
         <p>yo</p>
       </div>
     );
