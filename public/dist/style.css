@@ -5,7 +5,9 @@ body {
 a {
   cursor: pointer;
 }
-
+.starDropDownContainerS {
+  z-index: auto;
+}
 #productDescriptionContainerS {
   display: flex;
   flex-direction: column;

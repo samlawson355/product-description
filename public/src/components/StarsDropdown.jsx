@@ -1,12 +1,12 @@
 import React from "react";
 
 const StarsDropDown = props => (
-  <div onMouseEnter={props.hoverDropDown} onMouseLeave={props.hoverGoBack}>
+  <div>
     {props.dropDownDisplayed ? (
-      <div>star drop down rendering</div>
-    ) : (
-      <div>star NO</div>
-    )}
+      <div className="starDropDownContainerS">
+        {props.productRating}/5 --> this is the star box!
+      </div>
+    ) : null}
   </div>
 );
 
