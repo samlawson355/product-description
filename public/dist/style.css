@@ -17,6 +17,12 @@ a {
 
 .productMakerS {
   color: #0066c0;
+  cursor: pointer;
+}
+
+.numberOfRatingsS {
+  color: #0066c0;
+  cursor: pointer;
 }
 
 #starsRatingsQuestionsContainerS {

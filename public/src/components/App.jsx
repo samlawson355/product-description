@@ -20,10 +20,13 @@ class App extends React.Component {
         productRating: 4.7,
         productNumOfRatings: 4440,
         productNumOfQuestionsAnswered: 105
-      }
+      },
+      dropDownDisplayed: false
     };
     this.goToProductMaker = this.goToProductMaker.bind(this);
     this.descriptionCleaner = this.descriptionCleaner.bind(this);
+    this.hoverDropDown = this.hoverDropDown.bind(this);
+    this.hoverGoBack = this.hoverGoBack.bind(this);
   }
 
   descriptionCleaner(desc) {
@@ -41,12 +44,23 @@ class App extends React.Component {
     return cleanLines;
   }
 
-  // componentDidMount() {
-  //   axios({
-  //     method: "GET",
-  //     url: `/${this.state.currentProduct.id}`
-  //   }).then(console.log);
-  // }
+  hoverDropDown() {
+    this.setState({
+      dropDownDisplayed: true
+    });
+  }
+
+  hoverGoBack() {
+    this.setState({
+      dropDownDisplayed: false
+    });
+  }
+  componentDidMount() {
+    axios({
+      method: "GET",
+      url: `/${this.state.currentProduct.id}`
+    }).then(console.log);
+  }
 
   goToProductMaker() {
     alert(
@@ -67,7 +81,12 @@ class App extends React.Component {
           />
         </div>
         <span id="starsRatingsQuestionsContainerS">
-          <Stars currentProduct={this.state.currentProduct} />
+          <Stars
+            hoverDropDown={this.hoverDropDown}
+            hoverGoBack={this.hoverGoBack}
+            currentProduct={this.state.currentProduct}
+            dropDownDisplayed={this.state.dropDownDisplayed}
+          />
           <Ratings currentProduct={this.state.currentProduct} />
           <QuestionsAnswered currentProduct={this.state.currentProduct} />
         </span>

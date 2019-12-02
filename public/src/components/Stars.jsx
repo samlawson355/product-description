@@ -1,13 +1,20 @@
 import React from "react";
+import StarsDropdown from "./StarsDropdown.jsx";
 
-class Stars extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-  render() {
-    return <div>_ Stars renders // </div>;
-  }
-}
-
+const Stars = props => {
+  return (
+    <div onMouseEnter={props.hoverDropDown} onMouseLeave={props.hoverGoBack}>
+      {props.dropDownDisplayed ? (
+        <div>
+          <StarsDropdown
+            productRating={props.currentProduct.productRating}
+            productNumOfRatings={props.currentProduct.productNumOfRatings}
+          />
+        </div>
+      ) : (
+        "NOT HOVERING"
+      )}
+    </div>
+  );
+};
 export default Stars;
