@@ -14,25 +14,27 @@ class App extends React.Component {
     };
   }
 
-  componentDidMount() {
-    axios.get("/").then(console.log);
-  }
+  // componentDidMount() {
+  //   axios.get("/").then(console.log);
+  // }
 
   render() {
     return (
       <div id="productDescriptionContainerS">
         <div id="titleOfProductS">
-          <p>TITLE</p>
+          <h1>TITLE</h1>
         </div>
         <div id="productMakerContainerS">
           <ProductMaker currentProduct={this.state.currentProduct} />
         </div>
-        <div id="starsRatingsQuestionsS">
-          <span>
-            <Stars currentProduct={this.state.currentProduct} />
-            <Ratings currentProduct={this.state.currentProduct} />
-            <QuestionsAnswered currentProduct={this.state.currentProduct} />
-          </span>
+        <span id="starsRatingsQuestionsContainerS">
+          <Stars currentProduct={this.state.currentProduct} />
+          <Ratings currentProduct={this.state.currentProduct} />
+          <QuestionsAnswered currentProduct={this.state.currentProduct} />
+        </span>
+        <div id="productPriceS">$5,000,000.99</div>
+        <div id="productDescriptionTextS">
+          <p>this is the product description</p>
         </div>
       </div>
     );

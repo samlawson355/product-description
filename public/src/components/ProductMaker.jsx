@@ -6,7 +6,7 @@ class ProductMaker extends React.Component {
     this.state = {};
   }
   render() {
-    return <div>hey</div>;
+    return <div>ProductMaker renders // </div>;
   }
 }
 
