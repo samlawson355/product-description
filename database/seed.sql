@@ -317,31 +317,38 @@ VALUES('Weanas Thicken Climbing Harness', 'Weanas', "polyester++Beginner's Harne
 
 INSERT INTO 
 products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
-VALUES();
+VALUES('Wouxun KG-UV8E Tri-Band 136-174/220-260/400-520MHz Cross Band Repeater Duplex Work Mode 999CH VOX SOS CTCSS/DCS Ham Two Way Radio', 'Wouxun', '.Tri-band 136-174/220-260/400-520MHz (RX/TX) ,FM Radio 76-108MHz(RX)++Duplex Work Mode and Dual Receiving，It can TX on one area while RX on the other area simultaneously , other, RX on the same or different bands of A&B areas simultaneously++Cross Band Repeater，Frequency offset and direction programmable in repeater Mode UHF/VHF or VHF/UHF cross-band repeater++Voice Encryption and Non-Standard CTCSS/DCS，CTCSS or DCS create a secret channel between radios , non-standard ctcss or dcs is stronger version , voice encryption function use password encrypt voice data++Some Improve Functions，Voice compander , backlight intensity can be adjusted , FM radio can be stored and retrieved 20 sets of frequency , power-on message editable',
+145.88, 4.5, 2, 0);
 
 INSERT INTO 
 products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
-VALUES();
+VALUES('Tri-Band Yaesu VX-6R Submersible Amateur Ham Radio Transceiver (144/222/440)', 'Yaesu', "Compact, Mil-Spec, Waterproof & Submersible Tri Band Ham Radio!++Transmits the 144, 220 & 430Mhz Amateur Ham Radio Bands, & receives 0.5-999Mhz!++Output Power is 5 Watts on 2 meter & 70cm, & 1.5W on 222Mhz, with multiple lower power settings!++Additional features include a convenient access key for Vertex Standard's WIRES (Wide-coverage Internet Repeater Enhancement System), a transmit Time-Out Timer (TOT), Automatic Power-Off (APO), Automatic Repeater Shift (ARS), Yaesu's exclusive ARTS (Auto-Range Transponder System) which "beeps" the user when you move out of communications range with another ARTS equipped station, plus provision for reduction of the TX deviation in areas of high channel congestion.++Included in the box: Yaesu VX-6R Tri-Band Transceiver, FNB-80LI 1250mAh battery, SAD-11B Wall Charger, YHA-67 Antenna, Belt Clip, Manual and Warranty Card",
+249.94, 4.3, 89, 94);
 
 INSERT INTO 
 products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
-VALUES();
+VALUES('Diamond SRH320A 144/220/440 MHz Tri-Band Handheld SMA Antenna', 'Diamond', 'RX: 120 ~ 900 MHz (Gain: 440 MHz. 2.15 dBi. 5/8 wave, Max Power: 10 Watts, Length: 14") SMA++** Does not work with Baofeng radios ***',
+43.95, 4.3, 126, 34);
 
 INSERT INTO 
 products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
-VALUES();
+VALUES('Arcshell Rechargeable Long Range Two-Way Radios with Earpiece 4 Pack UHF 400-470Mhz Walkie Talkies Li-ion Battery and Charger Included', 'Arcshell', 'Small and convenient size;it easily fits on your hand;it measures 4.53 inches in height without antenna(antenna length:4.3 inches);1.30 inches thick;2.36 inches in width;6.3 oz light-weighted;solid built;water-resistant;easy to operate for all ages;2 Wattage power output; each radio has a removable belt clip++Frequency range is UHF 400-470MHz;16 pre-programmed channels;each radio has identical frequency on each of the 16 channels out of the box;16 position mechanical rotary switch channel selector;when you turn the knob to change the channel,a synthesized voice will tell you the channel number;channel frequency is programmable within the frequency range;you can program any of 50 CTCSS tones and 105 CDCSS tones on each programmed channel++Each radio comes with a 1500mAh rechargeable Li-ion battery and a charging dock; the charger comes with an AC wall-wart Type A plug and works in 110v-240v; it takes about 2.5 hours to fully charge; battery life is determined by transmit time;it lasts around 8 to 96 hours on a single charge depending on how much you transmit;you can charge the battery alone or charge the radio with battery installed++High quality built-in speaker on the radio provides loud and crystal clear sound; Push-to Talk button and built-in mic on the radio;each radio comes with a single-earbud style earpiece(foam piece included) with a microphone built in and a Push-to-Talk button; earpiece plug is K-type of 3.5mm plug and 2.5mm plug;when you plug in the earpiece,all sound goes to the earpiece and the radio speaker is silent;the radio has a VOX function++Range is very dependant on terrain;up to 5 miles with no obstructions,less in congested area;work great in a commercial construction or around the house;suitable for security team;maintenance team;construction team;fire department;warehouse;factory;kitchen staff;hotel;retail store;at the school;events communications;roadtrip while driving in different cars;family camping and hunting;on a cruise ship;in mountains;it works worldwide;you can add as many as you want and they work great together',
+45.99, 4.5, 1813, 391);
 
 INSERT INTO 
 products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
-VALUES();
+VALUES('Motorola T200TP Talkabout Radio, 3 Pack', 'Motorola Solutions', 'Power through Your Adventures: There are two ways to power your radio: use the included NiMH rechargeable batteries for up to 12 hours or use 3 AA batteries for up to 29 hours.++22 Channels Each with 121 privacy codes: With 22 channels and 121 privacy codes, totaling 2, 662 combinations, it’s easy to find an available channel.++Quickly Find a Channel: Use the scanning feature to see which channels are currently in use. Low Battery alert: Low battery alert reminds you when batteries are running low.++Customize call tones: Choose what your callers hear before you start speaking by selecting one of the 20 call tones. Eco Smart: most of the energy wasted when using a mobile device occurs during the charge.++Compatible with any Radio: You can communicate with other FRS/GMRS radios regardless of brand by being on the same channel and privacy codes.',
+43.99, 3.9, 542, 177);
 
 INSERT INTO 
 products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
-VALUES();
+VALUES('RunningSnail Solar Crank NOAA Weather Radio for Emergency with AM/FM, Flashlight, Reading Lamp and 2000mAh Power Bank', 'RunningSnail', 'A Must For Emergency: Keep your household prepared with this AM/FM & NOAA weather alert radio, broadcast emergency weather alerts for your area such as hurricanes, tornadoes and severe storms.++Table Lamp & 1W LED Flashlight: It can be used in emergency and survival situations to light up dark spaces and areas or to keep your room nice and bright after a storm cuts off your power.++Hand Crank Self-charge for Outage: 2000mAh rechargeable battery provides up to 12 hours of light or 4-6 hours of radio time.++SOS Alarm With Flashing Red Light: Ask for help in case you have an emergency or you want to warn somebody.++Multiple Ways to Charge: Hand crank, solar charging, Micro USB cable and 3 AAA batteries(not included). It can be charge USB port devices such as smart phones, to keep you connected and powered.',
+29.90, 4.5, 57, 18);
 
 INSERT INTO 
 products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
-VALUES();
+VALUES('Ka-Bar Tactical Spork (Spoon Fork Knife) Tool 9909', 'Ka-Bar', 'Introducing our new 2 in one multifunction Ka-Bar Tactical Spork perfect for various occasions like camping, hunting and fishing.++Highly recommended sturdy polymer plastic material plastic spork is durable and long lasting making it effective and long lasting.++One of the best feature of camping spork is that it could be separated in half and becomes multifunctional. Pretty cool little setup also contains a pretty decent knife with it.++Multitool, fairly in expensive, Food and detergent safe, perfectly designed to be an advanced compliance tool You could eat with it also helpful in self-defense.++Overall length: 6.875-inch folding spork is made in USA, Extremely light weight.',
+5.86, 4.2, 1810, 56);
 
 INSERT INTO 
 products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
