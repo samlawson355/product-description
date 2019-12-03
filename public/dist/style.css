@@ -8,6 +8,7 @@ a {
 .starDropDownContainerS {
   z-index: auto;
 }
+
 #productDescriptionContainerS {
   display: flex;
   flex-direction: column;
