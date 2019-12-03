@@ -352,11 +352,13 @@ VALUES('Ka-Bar Tactical Spork (Spoon Fork Knife) Tool 9909', 'Ka-Bar', 'Introduc
 
 INSERT INTO 
 products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
-VALUES();
+VALUES('Bushcraft 101: A Field Guide to the Art of Wilderness Survival', 'Dave Canterbury', "The ultimate resource for experiencing the backcountry!++Written by survivalist expert Dave Canterbury, Bushcraft 101 gets you ready for your next backcountry trip with advice on making the most of your time outdoors. Based on the 5Cs of Survivability--cutting tools, covering, combustion devices, containers, and cordages--this valuable guide offers only the most important survival skills to help you craft resources from your surroundings and truly experience the beauty and thrill of the wilderness. Inside, you'll also discover detailed information on:++Choosing the right items for your kit.++Manufacturing needed tools and supplies.++Collecting and cooking food.++Protecting yourself from the elements.++With Canterbury's guidance, you'll not only prepare yourself for any climate and situation, you'll also learn how to use the art of bushcraft to reconnect with nature in ways you've never imagined.",
+9.55, 4.5, 1711, 0);
 
 INSERT INTO 
 products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
-VALUES();
+VALUES('Bushcraft First Aid: A Field Guide to Wilderness Emergency Care', 'Dave Canterbury', 'Out in the woods or on top of a mountain, there’s no calling 9-1-1. Bushcraft First Aid teaches you how to be your own first responder. The authors’ years of experience and training will help hikers and backpackers deal with a variety of emergency situations, from cuts and burns to broken bones and head injuries. You’ll also learn what to pack and how to make bandages, dressings, and slings at a moment’s notice. As bushcraft experts, Canterbury and Hunt explain how to use plants as medicine to treat various conditions. Bushcraft First Aid provides the lifesaving information you need to keep yourself and your fellow hikers safe on the trail.',
+10.26, 4.5, 116, 0);
 
 INSERT INTO 
 products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
