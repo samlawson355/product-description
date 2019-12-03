@@ -39,6 +39,10 @@ class App extends React.Component {
         cleanedDesc = "";
         curChar = i + 2;
       }
+      if (i === desc.length - 1) {
+        cleanedDesc += desc.slice(curChar, i + 1);
+        cleanLines.push(cleanedDesc);
+      }
     }
     return cleanLines;
   }
