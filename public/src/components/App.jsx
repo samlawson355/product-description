@@ -69,8 +69,7 @@ class App extends React.Component {
   }
 
   render() {
-    console.log("render ran");
-    // console.log(`pathname: ${window.location.pathname}`);
+    console.log(`pathname: ${window.location.pathname}`);
     return (
       <div id="productDescriptionContainerS">
         <div id="titleOfProductContainerS">
