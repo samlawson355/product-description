@@ -3,8 +3,15 @@ body {
 }
 
 a {
+  color: #0066c0;
   cursor: pointer;
 }
+
+a:hover {
+  color: #c45500;
+  text-decoration: underline;
+}
+
 .starDropDownContainerS {
   z-index: auto;
 }
@@ -16,7 +23,7 @@ a {
 
 #titleOfProductContainerS {
   height: auto;
-  font-size: x-large;
+  font-size: 1.3em;
 }
 
 #titleOfProductS {
@@ -28,12 +35,11 @@ a {
 }
 
 #productMakerS {
-  color: #0066c0;
   cursor: pointer;
 }
 
 .numberOfRatingsS {
-  color: #0066c0;
+  /* color: #0066c0; */
   cursor: pointer;
 }
 
