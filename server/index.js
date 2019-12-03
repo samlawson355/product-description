@@ -7,9 +7,9 @@ const db = require("../database/index.js");
 app.use(express.static(path.join(__dirname, "../public/dist")));
 app.use(express.json());
 
-app.get(`/5`, (req, res) => {
-  console.log(req.route.path.slice(1));
-  db.getProduct(req.route.path.slice(1), (err, results) => {
+app.get(`/:id`, (req, res) => {
+  let id = req.params.id;
+  db.getProduct(id, (err, results) => {
     if (err) {
       console.log(err);
     } else {

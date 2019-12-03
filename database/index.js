@@ -14,7 +14,7 @@ const getProduct = (productID, callback) => {
     `SELECT * FROM products WHERE id = ${productID}`,
     (err, results) => {
       if (err) {
-        // console.log(err);
+        console.log(err);
       } else {
         callback(err, results);
       }

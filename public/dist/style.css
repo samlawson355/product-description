@@ -39,8 +39,10 @@ a {
 
 #starsRatingsQuestionsContainerS {
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
   padding-bottom: 30px;
+  width: 300px;
 }
 #productPriceContainerS {
   height: 50px;
