@@ -247,6 +247,153 @@ VALUES('HotHands Toe & Hand Warmer Pack (10 Toe Warmers and 2 packs of Hand Warm
 
 INSERT INTO 
 products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
+VALUES('Portable Gas Heater Outdoor Warmer Propane Butane Tent Heater', 'APG outdoor', "Made of stainless steel for durability.++Weight 320G and comes in a storage bag, convenient to carry.(Note: this product doesn't contain gas tank)++Adjustable safety valve controls gas flow and heating power.++Dimension: 15 * 14cm / 5.9 * 5.5in (D * H)++Package List:1 * Heater,1 * Canister Stand,1 * Storage Bag",
+23.99, 5, 1, 4);
+
+INSERT INTO 
+products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
+VALUES('Hotop 2 Pieces Camping Stove Adapter 1 Lb Propane Small Tank Input', 'HOTOP', "You will get: 2 pieces camping stove adapters in your package, enough for you to start your barbecue party or outdoor picnic, and you can share them with your family and friends, they are good camping necessities++Efficient, easily input and output: convert 1lb small canister to EN417 lindal valve canister, 1 lb small tank input and EN417 lindal valve output, very efficient++Durable: made of aluminum alloy and copper material that makes this camping stove adaptor corrosion resistant and long lasting, it will last you few hour of usage, with this adaptor you can use larger tanks that will last you long period of time, convenient for those with larger tanks++Safe and no leakage: it fits well and no leak, the threads are cut cleanly and screwed on tightly, this adapter will automatically turn off if the stove does not connect, very safe for you to use++Easy to use: the LPG adapter simply threads into the camping propane canister and your stove or stove's input end threads onto the LPG adapter, suitable for the 1lb propane small tank to connect the stove, light and any other thing which need EN417 connector, easy to carry when you go out for a picnic",
+13.99, 5, 2, 0);
+
+INSERT INTO 
+products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
+VALUES('REEHUT Ultralight Portable Camping Stoves Backpacking Stove with Piezo Ignition Adjustable Valve', 'REEHUT', 'Durable material: Made of aluminum alloy and stainless steel, stand high temperature and weight, anti-corrosion, carry with piezo ignition system.++Compact and Foldable: ALL-in-1 design, easy to operate, weighs only 0.6lbs, lightweight, and come with carrying case for portability. Perfect design for ultralight camping and backpacking.++Flame control: Electronic strike fire ignitor, adjustable control valve for fast maximum heat output, eco-friendly, rated speed: 3000w (gas tank is not included).++Broad compatibility: Compatible with any 7/16 thread single butane/butane-propane mixed fuel canisters (EN 417).++Warranty: If there is an issue with our product for any reason, we will REFUND you.',
+14.99, 4.5, 339, 25);
+
+INSERT INTO 
+products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
+VALUES();
+
+INSERT INTO 
+products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
+VALUES();
+
+INSERT INTO 
+products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
+VALUES();
+
+INSERT INTO 
+products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
+VALUES();
+
+INSERT INTO 
+products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
+VALUES();
+
+INSERT INTO 
+products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
+VALUES();
+
+INSERT INTO 
+products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
+VALUES();
+
+INSERT INTO 
+products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
+VALUES();
+
+INSERT INTO 
+products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
+VALUES();
+
+INSERT INTO 
+products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
+VALUES();
+
+INSERT INTO 
+products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
+VALUES();
+
+INSERT INTO 
+products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
+VALUES();
+
+INSERT INTO 
+products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
+VALUES();
+
+INSERT INTO 
+products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
+VALUES();
+
+INSERT INTO 
+products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
+VALUES();
+
+INSERT INTO 
+products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
+VALUES();
+
+INSERT INTO 
+products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
+VALUES();
+
+INSERT INTO 
+products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
+VALUES();
+
+INSERT INTO 
+products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
+VALUES();
+
+INSERT INTO 
+products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
+VALUES();
+
+INSERT INTO 
+products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
+VALUES();
+
+INSERT INTO 
+products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
+VALUES();
+
+INSERT INTO 
+products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
+VALUES();
+
+INSERT INTO 
+products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
+VALUES();
+
+INSERT INTO 
+products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
+VALUES();
+
+INSERT INTO 
+products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
+VALUES();
+
+INSERT INTO 
+products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
+VALUES();
+
+INSERT INTO 
+products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
+VALUES();
+
+INSERT INTO 
+products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
+VALUES();
+
+INSERT INTO 
+products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
+VALUES();
+
+INSERT INTO 
+products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
+VALUES();
+
+INSERT INTO 
+products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
+VALUES();
+
+INSERT INTO 
+products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
+VALUES();
+
+INSERT INTO 
+products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
 VALUES();
 
 INSERT INTO 
