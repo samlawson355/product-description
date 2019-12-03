@@ -9,7 +9,6 @@ app.use(express.json());
 
 app.get("/5", (req, res) => {
   db.getProduct(5, (err, results) => {
-    console.log(results);
     if (err) {
       console.log(err);
     } else {

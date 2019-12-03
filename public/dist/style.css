@@ -14,11 +14,20 @@ a {
   flex-direction: column;
 }
 
-#titleOfProductS {
-  width: 100%;
+#titleOfProductContainerS {
+  height: auto;
+  font-size: x-large;
 }
 
-.productMakerS {
+#titleOfProductS {
+  vertical-align: middle;
+}
+
+#theWordByS {
+  font-size: smaller;
+}
+
+#productMakerS {
   color: #0066c0;
   cursor: pointer;
 }

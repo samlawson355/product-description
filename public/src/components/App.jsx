@@ -55,6 +55,7 @@ class App extends React.Component {
       dropDownDisplayed: false
     });
   }
+
   componentDidMount() {
     axios({
       method: "GET",
@@ -71,8 +72,10 @@ class App extends React.Component {
   render() {
     return (
       <div id="productDescriptionContainerS">
-        <div id="titleOfProductS">
-          <h1>{this.state.currentProduct.productName}</h1>
+        <div id="titleOfProductContainerS">
+          <div id="titleOfProductS">
+            {this.state.currentProduct.productName}
+          </div>
         </div>
         <div id="productMakerContainerS">
           <ProductMaker
