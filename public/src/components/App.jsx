@@ -4,7 +4,6 @@ import Stars from "./Stars.jsx";
 import Ratings from "./Ratings.jsx";
 import QuestionsAnswered from "./QuestionsAnswered.jsx";
 const axios = require("axios");
-const fetch = require("node-fetch");
 
 class App extends React.Component {
   constructor(props) {
@@ -60,7 +59,7 @@ class App extends React.Component {
     axios({
       method: "GET",
       url: `/${this.state.currentProduct.id}`
-    }).then(console.log);
+    }).then(data => console.log(data.data[0]));
   }
 
   goToProductMaker() {
@@ -70,6 +69,8 @@ class App extends React.Component {
   }
 
   render() {
+    console.log("render ran");
+    // console.log(`pathname: ${window.location.pathname}`);
     return (
       <div id="productDescriptionContainerS">
         <div id="titleOfProductContainerS">

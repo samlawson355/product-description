@@ -7,16 +7,15 @@ const db = require("../database/index.js");
 app.use(express.static(path.join(__dirname, "../public/dist")));
 app.use(express.json());
 
-app.get("/5", (req, res) => {
-  db.getProduct(5, (err, results) => {
+app.get(`/5`, (req, res) => {
+  console.log(req.route.path.slice(1));
+  db.getProduct(req.route.path.slice(1), (err, results) => {
     if (err) {
       console.log(err);
     } else {
       res.send(results);
     }
   });
-  // console.log(req.body);
-  // db.getProduct();
 });
 
 app.listen(port, console.log(`Listening on port ${port}...`));
