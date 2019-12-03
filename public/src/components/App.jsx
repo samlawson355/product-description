@@ -90,8 +90,13 @@ class App extends React.Component {
           <Ratings currentProduct={this.state.currentProduct} />
           <QuestionsAnswered currentProduct={this.state.currentProduct} />
         </span>
-        <div id="productPriceS">${this.state.currentProduct.productPrice}</div>
-        <div id="productDescriptionTextS">
+        <span id="productPriceContainerS">
+          <span id="theWordPriceS">Price: </span>
+          <span id="productPriceS">
+            ${this.state.currentProduct.productPrice}
+          </span>
+        </span>
+        <div id="productDescriptionLineContainerS">
           <ul>
             {this.descriptionCleaner(this.state.currentProduct.productDesc).map(
               (line, id) => (
