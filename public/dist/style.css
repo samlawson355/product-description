@@ -12,10 +12,6 @@ a:hover {
   text-decoration: underline;
 }
 
-.starDropDownContainerS {
-  z-index: auto;
-}
-
 #productDescriptionContainerS {
   display: flex;
   flex-direction: column;
@@ -38,8 +34,7 @@ a:hover {
   cursor: pointer;
 }
 
-.numberOfRatingsS {
-  /* color: #0066c0; */
+#numberOfRatingsS {
   cursor: pointer;
 }
 
@@ -48,8 +43,13 @@ a:hover {
   justify-content: space-between;
   flex-direction: row;
   padding-bottom: 30px;
-  width: 300px;
+  width: 400px;
 }
+
+#theLineS {
+  margin: 25px;
+}
+
 #productPriceContainerS {
   height: 50px;
 }
@@ -72,6 +72,13 @@ a:hover {
   height: 30%;
   justify-content: left;
 }
+
+#starDropDownContainerS {
+  position: absolute;
+  z-index: 100;
+}
+
 .productDescriptionLineS {
   color: black;
+  font-size: smaller;
 }

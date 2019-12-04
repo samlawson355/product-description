@@ -9,6 +9,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      currentProduct: null,
       dropDownDisplayed: false
     };
     this.goToProductMaker = this.goToProductMaker.bind(this);
@@ -81,7 +82,7 @@ class App extends React.Component {
 
   render() {
     return !this.state.currentProduct ? (
-      <button onClick={this.selectProduct} value="5">
+      <button onClick={this.selectProduct} value="80">
         Click for products
       </button>
     ) : (
