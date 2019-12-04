@@ -162,6 +162,21 @@ VALUES('Ultimate 2018 US Military MRE Complete Meal', 'MRE', 'Loaded with nutrie
 
 INSERT INTO 
 products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
+VALUES('M2 BASICS 300 Piece (40 Unique Items) First Aid Kit w/Bag', 'M2 BASICS', 'FREE SURVIVAL ITEMS & FIRST AID GUIDE WHEN YOU BUY ORIGINAL FROM SELLER "M2 BRANDS": Attach your kit to your equipment or gear with the bonus Carabiner + Compass, Emergency Blanket & Whistle. Also receive our exclusive First Aid Guide for tips on how to treat common injuries. Delivered via email.++THIS KIT HAS OVER 1,600 REVIEWS! - 300 PIECE FIRST AID KIT INCLUDES 40 UNIQUE ITEMS: Adhesive Bandage Strips (6 varieties), Abdominal Trauma, Eye Pads, Sterile Gauze Sponges/Rolls, Medical Tape, Alcohol Wipes, Povidone Iodine Wipes, Antiseptic Towelettes, Alcohol-Free Wound Cleansing Wipes, Cotton Tip Applicators, CPR Face Mask, Disposable Latex-Free Gloves, Instant Cold Compress, Medical Face Mask, Metal Scissors/Tweezers, Safety Pins, Tourniquet, Wooden Splints/Tongue Depressors++PROTECT YOUR FAMILY & FRIENDS - ALWAYS BE PREPARED: M2 Basics 300-Piece First Aid Kits will keep you prepared for most common minor injuries or medical emergencies.++INCLUDES LIGHTWEIGHT & DURABLE CARRY CASE: Zippered 1st aide bag includes clear pockets to organize your red cross first aid supplies. Take it to any activity: sports, camping, hiking, college, work, travel or vacation. See photos & product description for detailed list of contents.++VERSATILE KIT TO FIT YOUR LIFESTYLE: Use for home, office, vehicle, workplace, industrial, kitchen, outdoor, tactical, dog, athletic, business, auto, sport, emt, first responder, rv, dog, puppy, pet, baby, daycare, work, boat, marine, military.',
+19.88, 4.8, 1615, 20);
+
+INSERT INTO 
+products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
+VALUES('First Alert 1038789 Standard Home Fire Extinguisher', 'First Alert', "First Alert's HOME1 Fire Extinguisher is UL rated 1 A: 10 B:C; it features durable all metal construction with a commercial grade metal valve and trigger++Multipurpose fire extinguisher fights wood, paper, trash, plastics, gasoline, oil, and electrical equipment fires++Uses monoammonium phosphate extinguishing agent; rechargeable by certified professionals after use++Metal pull pin with a safety seal to help prevent accidental discharge and tampering; corrosion resistant, easy to read, color coded metal gauge; waterproof label with easy instructions++U.S. Coast Guard approved for marine use",
+16.97, 4.5, 1076, 220);
+
+INSERT INTO 
+products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
+VALUES('Swiss Safe 2-in-1 First Aid Kit (120 Piece)', 'Swiss Safe', 'NEW & UPGRADED FOR 2019: 2-in-1 Premium First Aid Emergency Kit with 120 medical grade items.++FDA APPROVED: Manufactured from highest quality FDA approved facility exceeding safety standards.++INCLUDES MINI-FIRST AID KIT: Amazingly small, lightweight Mini Kit with additional 32 medical items.++MULTIPURPOSE: Perfect for any occasion or events - family, home, workplace, emergencies, outdoors.++100% MONEY BACK GUARANTEE: Swiss Safe Guarantees customer satisfaction or receive a 100% refund.',
+27.88, 4.8, 2936, 54);
+
+INSERT INTO 
+products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
 VALUES('Gerber Bear Grylls Ultimate Knife, Serrated Edge', 'Gerber', '½ Serrated High Carbon Stainless Steel Drop Point Blade - Ideal for edge retention and cutting rope++Ergonomic Textured Rubber Grip - Maximizes comfort and reduces slippage++Stainless Steel Pommel - At base of handle for hammering++Fire Starter - Ferrocerium rod locks into sheath, striker notch incorporated into back of knife blade++Nylon Sheath - Lightweight, military-grade, mildew resistant',
 48.43, 4.5, 1623, 111);
 
@@ -322,7 +337,7 @@ VALUES('Wouxun KG-UV8E Tri-Band 136-174/220-260/400-520MHz Cross Band Repeater D
 
 INSERT INTO 
 products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
-VALUES('Tri-Band Yaesu VX-6R Submersible Amateur Ham Radio Transceiver (144/222/440)', 'Yaesu', "Compact, Mil-Spec, Waterproof & Submersible Tri Band Ham Radio!++Transmits the 144, 220 & 430Mhz Amateur Ham Radio Bands, & receives 0.5-999Mhz!++Output Power is 5 Watts on 2 meter & 70cm, & 1.5W on 222Mhz, with multiple lower power settings!++Additional features include a convenient access key for Vertex Standard's WIRES (Wide-coverage Internet Repeater Enhancement System), a transmit Time-Out Timer (TOT), Automatic Power-Off (APO), Automatic Repeater Shift (ARS), Yaesu's exclusive ARTS (Auto-Range Transponder System) which "beeps" the user when you move out of communications range with another ARTS equipped station, plus provision for reduction of the TX deviation in areas of high channel congestion.++Included in the box: Yaesu VX-6R Tri-Band Transceiver, FNB-80LI 1250mAh battery, SAD-11B Wall Charger, YHA-67 Antenna, Belt Clip, Manual and Warranty Card",
+VALUES('Tri-Band Yaesu VX-6R Submersible Amateur Ham Radio Transceiver (144/222/440)', 'Yaesu', "Compact, Mil-Spec, Waterproof & Submersible Tri Band Ham Radio!++Transmits the 144, 220 & 430Mhz Amateur Ham Radio Bands, & receives 0.5-999Mhz!++Output Power is 5 Watts on 2 meter & 70cm, & 1.5W on 222Mhz, with multiple lower power settings!++Additional features include a convenient access key for Vertex Standard's WIRES (Wide-coverage Internet Repeater Enhancement System), a transmit Time-Out Timer (TOT), Automatic Power-Off (APO), Automatic Repeater Shift (ARS), Yaesu's exclusive ARTS (Auto-Range Transponder System) which beeps the user when you move out of communications range with another ARTS equipped station, plus provision for reduction of the TX deviation in areas of high channel congestion.++Included in the box: Yaesu VX-6R Tri-Band Transceiver, FNB-80LI 1250mAh battery, SAD-11B Wall Charger, YHA-67 Antenna, Belt Clip, Manual and Warranty Card",
 249.94, 4.3, 89, 94);
 
 INSERT INTO 
@@ -362,64 +377,140 @@ VALUES('Bushcraft First Aid: A Field Guide to Wilderness Emergency Care', 'Dave 
 
 INSERT INTO 
 products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
-VALUES();
+VALUES('The Bushcraft Field Guide to Trapping, Gathering, and Cooking in the Wild', 'Dave Canterbury', "What to eat, where to find it, and how to cook it!++Renowned outdoors expert and New York Times bestselling author Dave Canterbury provides you with all you need to know about packing, trapping, and preparing food for your treks and wilderness travels. Whether you're headed out for a day hike or a weeklong expedition, you'll find everything you need to survive--and eat well--out in the wild.++Canterbury makes certain you're set by not only teaching you how to hunt and gather, but also giving you recipes to make while on the trail. Complete with illustrations to accompany his instructions and a full-color photo guide of plants to forage and those to avoid, this is the go-to reference to keep in your pack.++The Bushcraft Field Guide to Trapping, Gathering, and Cooking in the Wild helps you achieve the full outdoor experience. With it, you'll be prepared to set off on your trip and enjoy living off the land.",
+10.79, 4.5, 266, 0);
 
 INSERT INTO 
 products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
-VALUES();
+VALUES('Edible Wild Plants: A North American Field Guide to Over 200 Natural Foods', 'Thomas Elias', 'Planning an outdoor adventure? Make sure to consult this information-packed and photo-filled North American field guide—arranged by season and region—before you go!++Already a huge success in previous editions, this must-have field guide now features a fresh new cover, as well as nearly 400 color photos and detailed information on more than 200 species of edible plants all across North America.++With all the plants conveniently organized by season, enthusiasts will find it very simple to locate and identify their desired ingredients. Each entry includes images, plus facts on the plant’s habitat, physical properties, harvesting, preparation, and poisonous look-alikes. The introduction contains tempting recipes and there’s a quick-reference seasonal key for each plant.',
+14.83, 4.6, 472, 0);
 
 INSERT INTO 
 products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
-VALUES();
+VALUES('Tough Tesla Lighter – Outdoor Waterproof Windproof Dual Arc Plasma USB Electric w/Paratinder Lanyard & Emergency Whistle by Frog & Co. (Orange)', 'Survival Frog', "RECHARGEABLE - Ignite a fire with the push of a button using your new favorite lighter. Use the included cable to charge your lighter anywhere with a USB port. Charging time is 1.5-2 hours.++WATERPROOF & WINDPROOF - Electric lighter needs no butane or adjustments for altitude. Plastic Case with wire safety latch.++USAGE - Just touch the dual arcs to anything flammable and you'll have instant fire. Can be used 250-300 times per charge, with 10 second safety time-out.++INCLUDES - Para-tinder lanyard for lighting fires quickly & an emergency whistle. Perfect for camping, survival, or a backyard cookout.++BEST GUARANTEE IN THE INDUSTRY - We guarantee the Tough Tesla Lighter with our 6 Month Any Reason Refund Guarantee. Ships from USA. Live Customer Support. Click Add to Cart Now!",
+14.93, 4.4, 50, 5);
 
 INSERT INTO 
 products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
-VALUES();
+VALUES('Phone Skope PYRO Putty Winter, Summer, Eco Blend, Emergency Survival Fire Starter', 'Phone Skope', "EMERGENCY FIRE STARTER: Starting a fire can be challenging, especially when there’s wind, rain, and poor weather. That’s why we created an easier, more efficient, non-toxic fire starter to support every survivalist, adventurer, hunter, outdoorsman, and bbq enthusiast. Whether you need a fire for outdoor cooking, warmth, or light, this gel fire starter makes it easy!++WATERPROOF & WEATHER-RESISTANT: Designed to burn through sleet, rain, wind, high altitudes, and a wide range of temperatures, the Phone Skope PYRO Putty Blue Winter Blend is an essential addition to any 72-hour kit or survival supplies. It’s designed to burn in the coldest temperatures — from -20ºF to 70ºF. Burn it in winter, spring, summer, or fall!++QUICK-START FIRE: A proprietary, patent-pending putty that's pliable, sticky, and totally waterproof, this fire starter is easy to stick on logs, torches, or tinder. Create a fire that continues to burn for up to 15 minutes with a single quarter-sized dab. Stay safe out there without slowing yourself down with propane, complicated fire starters, or lighters that need to be recharged.++DISASTER PREPAREDNESS: Add this fire-starter tool to your emergency preparedness kit and you’ll be ready for any situation. Be prepared for any natural disaster, power outage, or off-grid survival scenario with this fire-starting fuel can. Add it to your survivalist backpack, outdoor recreation accessories, or zombie apocalypse survival kit.++FIRE BURN CAN: The PYRO Putty Blue Winter Blend comes in a 2 oz. can that will light many fires in all conditions. Don’t worry about wet logs, damp wood, or harsh weather — this fire starter fuel will burn in any weather or circumstances. It’s the perfect addition to any outdoor lover’s survival kit, camping supplies, or recreation gear.",
+12.99, 4.8, 259, 25);
 
 INSERT INTO 
 products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
-VALUES();
+VALUES('Texas Bushcraft Fire Starter Survival Kit', 'Texas Bushcraft', 'SURVIVE AND THRIVE with a firestarter kit by Texas Bushcraft. This high-quality 4-piece set includes fire steel with a striker; a paracord survival bracelet; and a drawstring tinder pouch for collecting combustible materials for starting a fire.++RELIABLE, WATERPROOF survival lighter consists of a magnesium fire starter rod with solid hardwood handle; and a serrated tinder scraper and striker. This 3/8” ferrocerium rod provides 15,000+ strikes, even when wet. It creates 5000 F degree sparks with ease.++BE PREPARED for sudden turns in weather by collecting and storing tinder ahead of time. Our large water-repellent tinder pouch is made of cowhide leather. It measures 15” flat and about 7” when cinched closed with its’ drawstring. It’s also a handy possibles pouch for foraging wild edibles.++12’ OF PARACORD between the survival bracelet and ferro rod lanyard provide cordage for lashing together a lean-to; tying together a splint; or securing equipment to your backpack, ATV or car roof. The bracelet’s bow shackle includes an extra pin in case the other one goes missing.++100% SATISFACTION GUARANTEE lets you buy with confidence. If you’re not delighted with the quality and performance of the Texas Bushcraft Firestarter Kit, return it for a full refund of your purchase price. No questions and no quibbles.',
+31.95, 4.5, 47, 0);
 
 INSERT INTO 
 products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
-VALUES();
+VALUES('Zippo Lighter Fluid', 'Zippo', '12 oz. can of lighter fluid++Fast Ignition; Low odor++Clean burning++Made in USA++Recommended for optimum performance of Zippo windproof lighters and refillable hand warmers',
+6.71, 4.7, 3311, 114);
 
 INSERT INTO 
 products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
-VALUES();
+VALUES('Vitafusion MultiVites Gummy Vitamins, 150ct', 'Vitafusion', 'Natural berry, peach and orange flavors++Clinically Proven Absorption [4]++Each serving provides: Antioxidant Vitamins C & E and an excellent source of vitamins B12, B6, Folic Acid and Pantothenic Acid++Contains NO high-fructose corn syrup, NO artificial sweeteners, NO gluten, NO dairy and NO synthetic (FD&C) dyes++Recipient of the 2018 ChefsBest Excellence Award. The ChefsBest Excellence Award is awarded to brands that surpass quality standards established by independent professional chefs.',
+9.36, 4.5, 3063, 143);
 
 INSERT INTO 
 products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
-VALUES();
+VALUES('UST Emergency Food Ration Bars (PDQ 4-ct)', 'UST', 'DIMENSIONS: 6” L x 4.5” W x 1.25” D and weighs 20.2 oz++RELIABLE: Unique, non-thirst provoking formula bars with the perfect blend of required calories and nutrients to survive emergencies++DURABLE: Each bar packs 2400 calories per bar (or 6 – 400 calories portions) has a 5-year shelf life if left unopened++CONVENIENT: Pleasant apple-cinnamon flavor to ease the moments of much needed fuel to finish out hikes or in dire situations while waiting for rescue++HEALTHY: Excellent source of energy with an optimal balance of nutrients and they are cholesterol free',
+27.17, 3.9, 36, 21);
 
 INSERT INTO 
 products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
-VALUES();
+VALUES('DATREX Emergency Water Pouch for Disaster or Survival, 125 ml Each', 'Datrex', 'PLASTIC++Made in the USA++Emergency purified water for immediate use; lightweight and extremely compact(64)-125 ml sachets++Loss potential minimized due to individual sachets and ideal for storage++Easy to dispense from a pre-measured sachet; superior packaging materials for optimum durability in your survival kit++Such, Canadian Coast guard, EC and NZ approval (nan 8960 0112 4454 3)++5 years shelf life',
+29.95, 4.4, 917, 142);
 
 INSERT INTO 
 products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
-VALUES();
+VALUES('365 Everyday Value, Water Spring, 16.9 Fl Oz, 24 Pack', '365 Everyday Value', '', 
+3.49, 5, 1, 0);
 
 INSERT INTO 
 products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
-VALUES();
+VALUES('Bear Archery Salute Ready to Hunt Compound Bow Includes Trophy Ridge Sight, Whisker Biscuit, Peep Sight, and S-Loop', 'Bear Archery', 'Maximum adjustability with a peak draw range of 50 to 70 lbs. and a draw length range of 20" to 30"++Dual cam system offers a super smooth draw cycle while keeping speed and efficiency++Ready to hunt compound bow comes equipped with Trophy Ridge accessories++7 ¼" brace height offers a high level of forgiveness++Weighs 4 lbs. and shoots up to 300 feet per second',
+298.00, 4.1, 6, 7);
 
 INSERT INTO 
 products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
-VALUES();
+VALUES('Tiger Archery 30Inch Carbon Arrow Practice Hunting Arrows with Removable Tips for Compound & Recurve Bow(Pack of 12)', 'Tiger Archery', 'Length:30", Outer diameter: 0.309 inch. Fletching with 2 black 1 white vanes. For draw weight 40-60 pounds recurve, compound, or long bows.++They are solid & well made. Precision carbon hunting arrows made for extended durability and long lasting target practice.++Colored plastic fletching make flight always pointed the right way. The tips are nickel plated stainless steel which is perfect for target practice & outdoor shooting.++With replaceable nocks for free. Nocks are not fixed by glue. It can be adjustable for your bow.++The arrows came extremely well packaged and the quality is also impeccable.',
+28.89, 4.2, 378, 81);
 
 INSERT INTO 
 products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
-VALUES();
+VALUES('APOC Survival Katana', 'APOC', '23 1/2 inch black oxide coated 9260 spring steel blade++Full tang, triple riveted G10 handle++Light fiberglass scabbard with mole Compatible platform',
+135.99, 4, 12, 4);
 
 INSERT INTO 
 products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
-VALUES();
+VALUES('MOSSY OAK Emergency Survival Kit in Waterproof and Airproof Protective Case', 'Mossy Oak', '[WATERPROOF/AIRPROOF PROTECTIVE CASE] - With 3-piece foams for shockproof, sealing ring and air outlet knob for waterproof, the 7"x5"x10.6" heavy duty airproof and dusty-proof protective hard case is great for storing all kinds of outdoor survival gear++[10-in-1 MULTIFUNCTIONAL TOOL WITH POUCH] - Including knives, saw, can opener, bottle opener, multi-screwdrivers, pliers and belt case, the multi-tool is extremely useful and highly versatile++[FOLDING KNIFE WITH STAINLESS STEEL BLADE] - Built with a 3.5-inch sharp stainless steel drop point blade, 4.5-inch grip handle featuring with mesh pattern, the overall length is 8 inches. Razor sharp black blade tactical knife resists rust, chips, breakage and stains++[WATERPROOF FLASHLIGHT, TACTICAL PEN, PARACORD BRACELET] - A: 4.88 inch waterproof Aluminum Flashlight includes 3 x AAA batteries, which has a 150 lumen output. B: Tactical Pen, cool writing tools with high performance and bodyguard for emergency as glass breaker. C: Survival Bracelet with built-in whistle, compass and fire starter++[PERFECT GIFT IDEA FOR FAMILY OR FRIENDS] - Great for camping, hiking, survival, hunting, trekking, home, car, outdoors, DIY and emergency situation, it’s a perfect gift idea for any family member or friend who is passionate about the great outdoors and who loves an adventure',
+49.99, 4.5, 11, 0);
 
 INSERT INTO 
 products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
-VALUES();
+VALUES('Mr. Heater F215100 MH4B Little Buddy 3800-BTU Indoor Safe Propane Heater, Medium', 'Mr. Heater', 'ndoor-safe portable propane heater for rooms up to 95 square feet. THIS UNIT IS NOT INTENDED FOR GOLF CART USE OR FOR MOTORIZED VEHICLES.++Continuous odor-free, 45-degree heating angle. Maximum Elevation (Ft) 7000 Feet. Automatic low oxygen shut-off system (ODS)++Simple on/off buttons; uses 1-pound disposable propane cylinder (not included). Run time at minimum btu and maximum btu is 5.6 hours. Do­ not­ operate­ heater­ in­ any ­moving­ vehicle. This ­heater ­requires ­a­ vent­ area­ of­ 4­ square­ inches­ minimum ­for­ adequate ventilation ­during­ operation++Low-oxygen sensor and accidental tip-over switch with auto shut-off for safety.THE USE OF UN-AUTHORIZED ACCESSORIES/ATTACHMENTS WITH THIS HEATER ARE EXPRESSLY PROHIBITED, MAY CAUSE SERIOUS INJURY, AND WILL VOID THE WARRANTY.++Recommended for emergency heat, tents, campers, workshops, job sites, porches, patios, decks, garages, storage buildings, picnics, tailgate parties, construction trailers, sporting events, barns, sheds, hunting blinds, shelters and ice fishing shanties',
+58.46, 4, 994, 224);
 
 INSERT INTO 
 products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
-VALUES();
+VALUES('HiCool Winter Gloves,Touch Screen Running Thermal Driving Warm Outdoor Sports Head Gloves for Men Women', 'HiCool', '[Sensitive Touchscreen Compatible] This warm winter gloves adopted touchscreen fingers capability design, enable smart phone or tablet use normally with thermal gloves on while keeping hands warm in the cold weather++[Comfortable and Versatile] Made of high-quality elastic wool lycra fabric, windproof, warmer, and more flexible. This outdoor sports warm gloves is ideal for driving, running, cycling, walking, hiking, climbing, jogging, photographing , etc.++[Superior Grip] These thermal running gloves, with silicone glue on the palm, middle finger, ring finger and little finger, let you grip any items firmly, efficiently prevent the items slipping, giving you best experience in daily use++[Unisex Gloves with Elastic Wrist Cuff] With elastic wrist strap, this comfy full finger gloves enable you to wear and take off easily, keep hands warm and prevent cold air inside, fit for winter, fall or spring++[Perfect Gift] Touchscreen black gloves are fashionable and moderately warm, is the ideal gift for your lover, families, friends or workmates to play together in cold weather',
+15.95, 4.5, 202, 22);
+
+INSERT INTO 
+products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
+VALUES('Lixada Mosquito Suit - Whole Body Repellent Bug Jacket Mesh Hooded Suits Men Women Ultra-fine Mesh Insect Protective for Outdoor Fishing Hiking Camping Gardening Farming', 'Lixada', 'Great protector - Made from premium durable featherweight see-through polyester No-See-Um mesh. Ultra-fine mesh can not be penetrated by mosquitoes or any other insects, a super protective net suit.++All round protection - One hooded jacket, one pants and a pair of gloves, a perfect whole protection system for your outdoor activities to keep your whole body away from pesky insects.++Excellent ventilation - See-through thin yarn for excellent ventilation in all direction and avoid blocking eyesight.++Comfortable design - Elastic scuff, waist and zippered hooded jacket. Medium fits up to 160lbs, Large fits up to 240lbs, X-Large fits up to 300lbs. Suit for most of people, a great gift for a fisherman, backpacker, camper, traveler, hiker, hunter, gardeners, etc++Lightweight & Portable - All well packed in a solid and strong stuff sack, convenient to carry and store. An ideal equipment for camping, gardening, hiking, fishing and traveling.',
+17.99, 0, 0, 0);
+
+INSERT INTO 
+products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
+VALUES('Sawyer Products Premium Permethrin Clothing Insect Repellent', 'Sawyer Products', 'Effective against the Yellow Fever Mosquito which can transmit the Zika Virus++Insect-killing repellent for your clothing is effective against ticks, chiggers, mites and mosquitoes including the Zika-transmitting Yellow Fever Mosquito; as effective as 100 percent DEET++Lasts up to 6 weeks (or 6 washings); will not stain or damage clothing, fabrics, plastics, finished surfaces, or outdoor gear++Odorless after drying; ideal for use while hunting++24-ounce capacity treats up to 8 garments; non-aerosol pump bottle; color of bottle may vary',
+14.99, 4.3, 3536, 318);
+
+INSERT INTO 
+products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
+VALUES('RADEX RD1503+ w/o dosimeter: High Accuracy Geiger Counter, Radiation Detector (English) (4-Pack)', 'RADEX by Quarta-Rad', 'Updated and improved 1503 with more features and new software++Combined Beta, Gamma and X-Ray radiation reading++Measurement cycle of 40 seconds++Scale range ambient dose rate equivalent is 0.05 - 9.99 µSv/h++Vibration is added as well as the audio alarm',
+2636.94, 4.1, 207, 122);
+
+INSERT INTO 
+products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
+VALUES('Geiger Counter Terra-P, Dosimeter Radiometer Radiation Detector MKS-05 IP30', 'Ecotest', 'This product is only authorized to the official distributor Ecotest, the others are counterfeits.++MKS-05 Terra-P radiation detection measurement instrument is the most popular household dosimeter in Ukraine and throughout the world. It is designed on the basis of the professional device MKS-05 TERRA, which is in operational service with the Ukrainian Army.++The dosimeter will help you to check the radiation safety of your home, place of work and leisure, car, household items, clothing construction materials, wild berries and mushrooms. Also, Ecotest Terra-P MKS-05 measures gamma background level and accumulated dose, estimates beta contamination. It is designed in a yellow shockproof housing and is compact in size.++The device is very simple to use, since it has only 2 control buttons - Threshold and Mode. To turn on the dosimeter, press and hold the Mode button for one second and dosimeter automatically enters the mode of gamma radiation measurement.++Terra-P dosimeter complies with educational requirements and is recommended by the Ministry of Education and Science of Ukraine for use as visual aids in educational establishments.',
+194.99, 4.7, 24, 28);
+
+INSERT INTO 
+products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
+VALUES('IOSAT - Pack of 3 by Iosat - Thyroid blocking pills for blocking radiation absorption', 'IOSAT', 'IOSAT - Pack of 3++October 2024 Expiration Date',
+22.29, 4.8, 91, 18);
+
+INSERT INTO 
+products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
+VALUES('RAD Triage 50 Personal Radiation Detector for Wallet or Pocket', 'SafeCastle', 'Fits in wallet or badge holder.++Instant detection of radiation from sources such as nuclear reactors, nuclear weapons fallout and dirty bombs++Made in the U.S.A | U.S. Military-grade and field tested and approved by U.S Dept of Homeland Security++Shelf-life may be extended up to 10 years by storing in the freezer. Once removed it will have a usable life of at least two years.++No batteries or calibration needed | Impervious to an EMP Bomb (electromagnetic pulse)',
+19.00, 3.8, 68, 19);
+
+INSERT INTO 
+products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
+VALUES('U.S. Armed Forces Nuclear, Biological And Chemical Survival Manual', 'Dick Couch', "In this comprehensive guide, military experts teach you how to survive an attack on American soil, from North Korean missiles to weaponized smallpox++North Korean nukes. Dirty bombs in train stations. Chemical warfare. Americans have more reasons than ever to be afraid. If a nuclear missile strikes, will you know what to do? If a nerve agent is released in your office building, will you know the best way to avoid harm? The U.S. Armed Forces Nuclear, Biological and Chemical Survival Manual gives you the information you need to survive a terrorist attack. It contains the best practices of all the United States' military services, adapted for the first time for civilian use. Experts agree that the threats posed by terrorists and enemy nations have never been graver. This handbook is the single most effective tool you can own to protect yourself and your family against the danger looming over our homeland.++This manual will show you how to:++- Protect yourself during a chemical or biological attack++- Recognize the indicators of nuclear, chemical and biological attack++- Develop a simple and effective family action plan++- Guard against the radiological effects of a dirty bomb++- Assist victims of nuclear, chemical, or biological agents++- Assemble and store the everyday materials that could save your life",
+9.99, 4, 109, 0);
+
+INSERT INTO 
+products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
+VALUES('GQ GMC300EPlus Fulfill Digital Nuclear Radiation Detector Monitor Meter', 'GQ', 'Newer GMC300EPlus Fulfill of gmc-300 series geiger counter for nuclear radiation++Text, graphic and large font mode provide visualized radiation changes++Usb connection for both communication and data communication',
+74.99, 4.3, 281, 175);
+
+INSERT INTO 
+products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
+VALUES('Koehler Enterprises RA990 Multi-Use Siphon Fuel Transfer Pump Kit (for Gas Oil and Liquids)', 'Koehler', 'Safely and easily transfer gasoline and other fluids through a siphon intake and discharge system++Eliminates need for risky mouth siphoning of dangerous chemicals++Included attachment for adapting to an air pump function for inflation++Great for home, industrial, marine and farm use',
+9.69, 3.9, 1048, 131);
+
+INSERT INTO 
+products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
+VALUES('No-Spill 1450 5-Gallon Poly Gas Can (CARB Compliant)', 'No-Spill', 'Thumb button control for precise pouring++7/8-inch funnel spout fills even the smallest equipment++Attached dust cover keeps your spout clean++Integrated 20 mesh stainless steel screen++CARB and EPA compliant',
+33.99, 4.2, 1766, 113);
+
+INSERT INTO 
+products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
+VALUES('Mission Darkness Non-Window Faraday Bag for Phones - Device Shielding for Law Enforcement, Military, Executive Privacy, Travel & Data Security, Anti-Hacking & Anti-Tracking Assurance', 'Mission Darkness', 'Do not compromise your shielding with knock-off bags! The only authorized Amazon seller comes from the name "MOS Equipment." Military-grade faraday bag designed for law enforcement forensic investigators.++EMP (Electromagnetic Pulse) protection approved! Tested and compliant to MIL STD 188-125 specifications by Keystone Compliance (report available upon request). Preserves the working integrity of electronic devices in the event of EMP or CME.++100% shielding of WiFi (2.4 & 5GHz), Bluetooth, cell signals (4G LTE+), GPS, RFID, and radio signals with 60-80dB average attenuation.++Outer dimensions: 9.75"L x 9.5"W | Inner usage dimensions: 5.5"L x 9"W | Double roll and Velcro closure.++Every bag is easily brandable with the closable pocket on back to place company/agency information. Uniquely serialized for asset tracking. High-grade water-resistant ballistic nylon outer materials.',
+22.99, 4.7, 453, 65);
+
+INSERT INTO 
+products(productName, productMaker, productDesc, productPrice, productRating, productNumOfRatings, productNumOfQuestionsAnswered) 
+VALUES('Mission Darkness Non-Window Faraday Bag for Laptops - Device Shielding for Law Enforcement, Military, Executive Privacy, EMP Protection, Travel & Data Security, Anti-Hacking & Anti-Tracking Assurance', 'Mission Darkness', 'MILITARY-GRADE FARADAY BAG - Designed for military and law enforcement forensics investigators; also used for government and executive travel, personal data security, signal isolation, EMP/CME protection, and EMF reduction.++MIL-STD-188-125 CERTIFIED - EMP (Electromagnetic Pulse) protection approved! Tested and compliant to MIL-STD-188-125 specifications by Keystone Compliance (report available upon request). Preserves the working integrity of electronic devices in the event of EMP or CME.++RF SIGNAL BLOCKING - Blocks WiFi (2.4 & 5GHz), Bluetooth, cell signals (4G LTE+), GPS, RFID, and radio signals with 60-80dB average attenuation. EMI shielding & RFI shielding.++LARGE CAPACITY - Outer dimensions: 21.5" x 15" x .1". Inner usage dimensions: 17" x 14". Universal size fits extra large laptops, plus multiple tablets, cell phones, radios, GPS units, and other large electronic devices.++ADDITIONAL FEATURES - Uniquely serialized for asset tracking, transparent pockets on back to place company information/evidence card, built with water-resistant ballistic nylon outer material and two interior layers of high-shielding TitanRF Faraday Fabric on all sides, secure double roll and Velcro closure.',
+95.00, 4.4, 50, 0);
