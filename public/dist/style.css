@@ -82,11 +82,13 @@ a:hover {
 }
 
 #itemInStockS {
-  color: green;
+  color: #007600;
+  font-size: large;
 }
 
 #itemNotInStockS {
   color: red;
+  font-size: large;
 }
 
 .productDescriptionLineS {
