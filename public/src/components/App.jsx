@@ -113,7 +113,6 @@ class App extends React.Component {
           </span>
         </span>
         <div id="grayLineDividerS"></div>
-        <div id="inStock">{this.inStockOrNot()}</div>
         <div id="productDescriptionLineContainerS">
           <ul>
             {this.descriptionCleaner(this.state.currentProduct.productDesc).map(
