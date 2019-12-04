@@ -1,5 +1,4 @@
 DROP DATABASE IF EXISTS amazonProductDescriptions;
-
 CREATE DATABASE IF NOT EXISTS amazonProductDescriptions;
 
 USE amazonProductDescriptions;
