@@ -81,6 +81,14 @@ a:hover {
   z-index: 100;
 }
 
+#itemInStockS {
+  color: green;
+}
+
+#itemNotInStockS {
+  color: red;
+}
+
 .productDescriptionLineS {
   color: black;
   font-size: smaller;

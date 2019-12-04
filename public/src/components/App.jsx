@@ -3,6 +3,7 @@ import ProductMaker from "./ProductMaker.jsx";
 import Stars from "./Stars.jsx";
 import Ratings from "./Ratings.jsx";
 import QuestionsAnswered from "./QuestionsAnswered.jsx";
+import InStock from "./InStock.jsx";
 const axios = require("axios");
 
 class App extends React.Component {
@@ -15,7 +16,6 @@ class App extends React.Component {
     this.descriptionCleaner = this.descriptionCleaner.bind(this);
     this.selectProduct = this.selectProduct.bind(this);
     // this.getAllProducts = this.getAllProducts.bind(this);
-    this.inStockOrNot = this.inStockOrNot.bind(this);
   }
 
   descriptionCleaner(desc) {
@@ -35,21 +35,6 @@ class App extends React.Component {
       }
     }
     return cleanLines;
-  }
-
-  inStockOrNot() {
-    let stock = [
-      "In Stock",
-      "In Stock",
-      "In Stock",
-      "In Stock",
-      "In Stock",
-      "In Stock",
-      "Out of Stock"
-    ];
-
-    let picker = stock[~~(Math.random() * stock.length)];
-    return picker;
   }
 
   selectProduct(event) {
@@ -113,6 +98,7 @@ class App extends React.Component {
           </span>
         </span>
         <div id="grayLineDividerS"></div>
+        <InStock />
         <div id="productDescriptionLineContainerS">
           <ul>
             {this.descriptionCleaner(this.state.currentProduct.productDesc).map(
