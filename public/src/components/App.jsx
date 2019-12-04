@@ -9,15 +9,13 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentProduct: null,
-      dropDownDisplayed: false
+      currentProduct: null
     };
     this.goToProductMaker = this.goToProductMaker.bind(this);
     this.descriptionCleaner = this.descriptionCleaner.bind(this);
-    this.hoverDropDown = this.hoverDropDown.bind(this);
-    this.hoverGoBack = this.hoverGoBack.bind(this);
     this.selectProduct = this.selectProduct.bind(this);
     // this.getAllProducts = this.getAllProducts.bind(this);
+    this.inStockOrNot = this.inStockOrNot.bind(this);
   }
 
   descriptionCleaner(desc) {
@@ -39,16 +37,19 @@ class App extends React.Component {
     return cleanLines;
   }
 
-  hoverDropDown() {
-    this.setState({
-      dropDownDisplayed: true
-    });
-  }
+  inStockOrNot() {
+    let stock = [
+      "In Stock",
+      "In Stock",
+      "In Stock",
+      "In Stock",
+      "In Stock",
+      "In Stock",
+      "Out of Stock"
+    ];
 
-  hoverGoBack() {
-    this.setState({
-      dropDownDisplayed: false
-    });
+    let picker = stock[~~(Math.random() * stock.length)];
+    return picker;
   }
 
   selectProduct(event) {
@@ -61,9 +62,11 @@ class App extends React.Component {
       })
     );
   }
+
   // componentDidMount() {
-  //   this.getAllProducts();
+  //   this.inStockOrNot();
   // }
+
   // getAllProducts() {
   //   console.log("get all ran");
   //   axios({
@@ -99,12 +102,7 @@ class App extends React.Component {
           />
         </div>
         <span id="starsRatingsQuestionsContainerS">
-          <Stars
-            hoverDropDown={this.hoverDropDown}
-            hoverGoBack={this.hoverGoBack}
-            currentProduct={this.state.currentProduct}
-            dropDownDisplayed={this.state.dropDownDisplayed}
-          />
+          <Stars currentProduct={this.state.currentProduct} />
           <Ratings currentProduct={this.state.currentProduct} />
           <QuestionsAnswered currentProduct={this.state.currentProduct} />
         </span>
@@ -115,6 +113,7 @@ class App extends React.Component {
           </span>
         </span>
         <div id="grayLineDividerS"></div>
+        <div id="inStock">{this.inStockOrNot()}</div>
         <div id="productDescriptionLineContainerS">
           <ul>
             {this.descriptionCleaner(this.state.currentProduct.productDesc).map(
