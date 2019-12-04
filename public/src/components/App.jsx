@@ -82,7 +82,7 @@ class App extends React.Component {
 
   render() {
     return !this.state.currentProduct ? (
-      <button onClick={this.selectProduct} value="80">
+      <button onClick={this.selectProduct} value="5">
         Click for products
       </button>
     ) : (
@@ -114,6 +114,7 @@ class App extends React.Component {
             ${this.state.currentProduct.productPrice}
           </span>
         </span>
+        <div id="grayLineDividerS"></div>
         <div id="productDescriptionLineContainerS">
           <ul>
             {this.descriptionCleaner(this.state.currentProduct.productDesc).map(
