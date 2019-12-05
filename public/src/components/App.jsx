@@ -48,10 +48,6 @@ class App extends React.Component {
     );
   }
 
-  // componentDidMount() {
-  //   this.inStockOrNot();
-  // }
-
   // getAllProducts() {
   //   console.log("get all ran");
   //   axios({
@@ -62,6 +58,7 @@ class App extends React.Component {
   //     .then(data => data.map(product => [product.id, product.productName]))
   //     .then(console.log);
   // }
+
   goToProductMaker() {
     alert(
       `This would have redirected you to all of ${this.state.currentProduct.productMaker}'s products`
