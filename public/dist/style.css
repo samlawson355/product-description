@@ -109,6 +109,29 @@ a:hover {
   background-color: #eda93a;
 }
 
+#theWordChoiceS {
+  color: #eda93a;
+}
+
+#blackFlagS {
+  background-color: #232f3e;
+  color: white;
+  font-size: small;
+  border-bottom: 1px solid #232f3e;
+  border-top: 3px solid #232f3e;
+  border-left: 7px solid #232f3e;
+  border-right: 7px solid #232f3e;
+}
+
+#theTriangleS {
+  font-size: 0%;
+  width: 0;
+  height: 0;
+  border-top: 20px solid #232f3e;
+  border-right: 10px solid transparent;
+  vertical-align: bottom;
+}
+
 #grayLineDividerS {
   padding-top: 3px;
   border-bottom: dotted 0.5px rgb(218, 218, 218);
@@ -150,4 +173,5 @@ a:hover {
 .productDescriptionLineS {
   color: black;
   font-size: smaller;
+  padding-bottom: 4px;
 }
