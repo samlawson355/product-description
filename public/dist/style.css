@@ -84,13 +84,33 @@ a:hover {
 }
 
 #textFlagDealContainerS {
-  /* display: flex; */
-  width: 50%;
-  margin-left: -1%;
+  width: 70%;
+  margin-left: 0%;
   justify-content: space-evenly;
 }
 
+#dealContainerS {
+  display: inline;
+  padding-left: 10px;
+  font-size: smaller;
+  vertical-align: bottom;
+}
+
+#flagHolderS {
+  vertical-align: bottom;
+  width: 50px;
+}
+
+#orangeFlagS {
+  border: 2px solid #eda93a;
+  border-radius: 3px;
+  font-size: small;
+  color: white;
+  background-color: #eda93a;
+}
+
 #grayLineDividerS {
+  padding-top: 3px;
   border-bottom: dotted 0.5px rgb(218, 218, 218);
 }
 

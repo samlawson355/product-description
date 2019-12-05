@@ -27,13 +27,20 @@ class FlagAndDeals extends React.Component {
         <span id="textFlagDealContainerS">
           <span id="theFlagS">
             {this.state.flagToShow ? (
-              <span>ORANGE flag</span>
+              <span id="flagHolderS">
+                <span id="orangeFlagS">Extra Savings</span>
+
+                <span id="dealContainerS">
+                  <span id="dealsDropdownS">
+                    <a>Buy 5, save 5%. 3 Applicable Promotion(s)</a>
+                  </span>
+                </span>
+              </span>
             ) : (
-              <span>BLACK flag</span>
+              <span id="flagHolderS">
+                <span id="blackFlagS">BLACK flag</span>
+              </span>
             )}
-          </span>
-          <span id="dealsDropdownS">
-            <a>DEALS</a>
           </span>
         </span>
       </div>
