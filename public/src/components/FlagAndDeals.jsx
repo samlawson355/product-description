@@ -38,7 +38,7 @@ class FlagAndDeals extends React.Component {
             ) : (
               <span id="flagHolderS">
                 <span id="blackFlagS">
-                  Amazon's <span id="theWordChoiceS">Choice</span>
+                  Gammazon's <span id="theWordChoiceS">Choice</span>
                 </span>
                 <span id="theTriangleS"></span>
               </span>
