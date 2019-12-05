@@ -4,6 +4,7 @@ import Stars from "./Stars.jsx";
 import Ratings from "./Ratings.jsx";
 import QuestionsAnswered from "./QuestionsAnswered.jsx";
 import InStock from "./InStock.jsx";
+import Report from "./Report.jsx";
 import FlagAndDeals from "./FlagAndDeals.jsx";
 
 class Description extends React.Component {
@@ -79,6 +80,12 @@ class Description extends React.Component {
             )}
           </ul>
         </div>
+        <span id="reportButtonContainerS">
+          <Report
+            reportModal={this.props.reportModal}
+            reportModalOpen={this.props.reportModalOpen}
+          />
+        </span>
       </div>
     );
   }

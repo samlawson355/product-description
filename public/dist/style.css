@@ -32,7 +32,6 @@ a:hover {
 
 #productMakerS {
   cursor: pointer;
-  /* font-size: small; */
 }
 
 #starsContainerS {
@@ -132,6 +131,11 @@ a:hover {
   vertical-align: bottom;
 }
 
+#textAfterBlackFlagS {
+  color: #888;
+  font-size: smaller;
+}
+
 #grayLineDividerS {
   padding-top: 3px;
   border-bottom: dotted 0.5px rgb(218, 218, 218);
@@ -174,4 +178,19 @@ a:hover {
   color: black;
   font-size: smaller;
   padding-bottom: 4px;
+}
+
+#reportButtonContainerS {
+  display: flex;
+  width: 100%;
+  font-size: smaller;
+}
+
+#talkBubbleS {
+  float: left;
+  width: 10px;
+  height: 10px;
+  border: 1px solid blue;
+  border-radius: 2px;
+  margin-top: 2.5px;
 }
