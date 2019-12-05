@@ -35,7 +35,7 @@ class Description extends React.Component {
 
   goToProductMaker() {
     alert(
-      `This would have redirected you to all of ${this.state.currentProduct.productMaker}'s products`
+      `This would have redirected you to all of ${this.props.currentProduct.productMaker}'s products`
     );
   }
 
@@ -50,7 +50,7 @@ class Description extends React.Component {
         <div id="productMakerContainerS">
           <ProductMaker
             currentProduct={this.props.currentProduct}
-            goToProductMaker={this.props.goToProductMaker}
+            goToProductMaker={this.goToProductMaker}
           />
         </div>
         <span id="starsRatingsQuestionsContainerS">

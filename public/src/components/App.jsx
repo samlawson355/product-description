@@ -10,7 +10,6 @@ class App extends React.Component {
     };
 
     this.selectProduct = this.selectProduct.bind(this);
-    // this.getAllProducts = this.getAllProducts.bind(this);
   }
 
   selectProduct(event) {
@@ -23,17 +22,6 @@ class App extends React.Component {
       })
     );
   }
-
-  // getAllProducts() {
-  //   console.log("get all ran");
-  //   axios({
-  //     method: "GET",
-  //     url: "/allProducts"
-  //   })
-  //     .then(data => data.data)
-  //     .then(data => data.map(product => [product.id, product.productName]))
-  //     .then(console.log);
-  // }
 
   render() {
     return !this.state.currentProduct ? (
