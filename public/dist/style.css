@@ -101,7 +101,10 @@ a:hover {
 }
 
 #orangeFlagS {
-  border: 2px solid #eda93a;
+  border-top: 2px solid #eda93a;
+  border-bottom: 2px solid #eda93a;
+  border-left: 4px solid #eda93a;
+  border-right: 4px solid #eda93a;
   border-radius: 3px;
   font-size: small;
   color: white;
