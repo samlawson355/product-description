@@ -1,5 +1,5 @@
 import React from "react";
-
+import ReportModal from "./ReportModal.jsx";
 class Report extends React.Component {
   constructor(props) {
     super(props);
@@ -15,6 +15,7 @@ class Report extends React.Component {
             Report incorrect product information.
           </a>
         </span>
+        <ReportModal />
       </span>
     );
   }

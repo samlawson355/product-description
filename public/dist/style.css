@@ -197,3 +197,20 @@ a:hover {
   border-radius: 2px;
   margin-top: 2.5px;
 }
+
+#reportModalContainerS {
+  position: absolute;
+  margin-top: -150px;
+  z-index: 10000;
+  width: 200px;
+  height: 350px;
+  border: 50px solid black;
+}
+
+#innerReportModalContainerS {
+  position: relative;
+  z-index: 1999;
+  border: 3px solid red;
+  width: 197px;
+  height: 347px;
+}
