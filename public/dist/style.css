@@ -322,3 +322,10 @@ a:hover {
   font-size: 1.1em;
   font-weight: 700;
 }
+
+#reportCommentFieldS {
+  width: 270px;
+  height: 60px;
+  border: 1px solid gray;
+  border-radius: 2px;
+}

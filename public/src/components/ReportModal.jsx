@@ -19,6 +19,7 @@ const ReportModal = props => {
             <div className="downArrowS"></div>
           </div>
           <div id="commentsReportModalS">Comments (optional)</div>
+          <textarea id="reportCommentFieldS" type="text"></textarea>
         </div>
       </div>
     </div>
