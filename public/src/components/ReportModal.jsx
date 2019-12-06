@@ -12,6 +12,7 @@ const ReportModal = props => {
           <div>Please tell us about the issue.</div>
           <div id="dropDownReportModalS">
             <h3 id="whichPartReportS">Which part of the page?</h3>
+            <h3>v</h3>
           </div>
         </div>
       </div>

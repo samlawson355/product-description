@@ -247,7 +247,7 @@ a:hover {
 
 #reportBoxXS {
   padding-right: 3%;
-  margin-top: 2.5%;
+  margin-top: 2.8%;
 }
 
 #centerReportModalS {
@@ -257,6 +257,7 @@ a:hover {
 }
 
 #dropDownReportModalS {
+  display: flex;
   border: 1px solid black;
   margin-top: 5px;
   width: 250px;
@@ -273,4 +274,7 @@ a:hover {
 #whichPartReportS {
   margin-top: 7.5px;
   padding-left: 3%;
+}
+
+.downArrowS {
 }
