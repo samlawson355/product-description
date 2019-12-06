@@ -202,7 +202,7 @@ a:hover {
   position: absolute;
   margin-top: -150px;
   z-index: 10000;
-  width: 200px;
+  width: 300px;
   height: 350px;
   border: 50px solid black;
 }
@@ -218,12 +218,59 @@ a:hover {
   background-color: white;
   margin-left: -2px;
   margin-top: -1px;
+  font-size: smaller;
 }
 
 #topBarOfReportModalS {
-  width: 100%;
+  font-weight: 900;
+  font-size: small;
+  display: flex;
+  justify-content: space-between;
+  background: rgb(213, 213, 213);
+  background: linear-gradient(
+    0deg,
+    rgba(213, 213, 213, 0.9360119047619048) 0%,
+    rgba(255, 255, 255, 0.6054796918767507) 79%
+  );
+  width: 98.5%;
   height: 10%;
   border: 2px solid green;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  position: absolute;
+}
+
+#reportIssueS {
+  padding-left: 3%;
+  margin-top: 2.5%;
+}
+
+#reportBoxXS {
+  padding-right: 3%;
+  margin-top: 2.5%;
+}
+
+#centerReportModalS {
+  padding-left: 3%;
+  position: relative;
+  margin-top: 20%;
+}
+
+#dropDownReportModalS {
+  border: 1px solid black;
+  margin-top: 5px;
+  width: 250px;
+  height: 30px;
+  border-radius: 3px;
+  background: rgb(213, 213, 213);
+  background: linear-gradient(
+    0deg,
+    rgba(213, 213, 213, 0.9360119047619048) 0%,
+    rgba(255, 255, 255, 0.6054796918767507) 79%
+  );
+}
+
+#whichPartReportS {
+  margin-top: 7.5px;
+  padding-left: 3%;
 }
