@@ -257,6 +257,7 @@ a:hover {
 }
 
 #dropDownReportModalS {
+  justify-content: space-between;
   display: flex;
   border: 1px solid black;
   margin-top: 5px;
@@ -274,7 +275,19 @@ a:hover {
 #whichPartReportS {
   margin-top: 7.5px;
   padding-left: 3%;
+  font-size: 1.1em;
+  font-weight: 900;
 }
 
 .downArrowS {
+  /* border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-top: 7.5px;
+  padding-right: 3%;
+  font-size: 1.1em;
+  font-weight: 900;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg); */
 }
