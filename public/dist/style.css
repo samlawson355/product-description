@@ -253,10 +253,15 @@ a:hover {
   margin-top: 20%;
 }
 
+#tellUsIssueReportS {
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
 #dropDownReportModalS {
   justify-content: space-between;
   display: flex;
-  border: 1px solid black;
+  border: 1px solid gray;
   margin-top: 5px;
   width: 270px;
   height: 30px;
@@ -277,14 +282,43 @@ a:hover {
 }
 
 .downArrowS {
-  height: 2px;
-  border: solid black;
+  height: 0.1px;
+  border: solid rgb(95, 95, 95);
   border-width: 0 3px 3px 0;
   margin-bottom: 11px;
-  margin-right: 20px;
-  margin-top: 7.5px;
-  padding-right: 7px;
+  margin-right: 10px;
+  margin-top: 10px;
+  padding-right: 5px;
   padding-top: 5px;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
+}
+
+#dropDownIssueReportModalS {
+  justify-content: space-between;
+  display: flex;
+  border: 1px solid gray;
+  margin-top: 5px;
+  width: 270px;
+  height: 30px;
+  border-radius: 3px;
+  background: rgb(213, 213, 213);
+  background: linear-gradient(
+    0deg,
+    rgba(213, 213, 213, 0.9360119047619048) 0%,
+    rgba(255, 255, 255, 0.6054796918767507) 79%
+  );
+}
+
+#issueReportS {
+  margin-top: 7.5px;
+  padding-left: 3%;
+  font-size: 1.1em;
+  font-weight: 900;
+}
+
+#commentsReportModalS {
+  padding-top: 5px;
+  font-size: 1.1em;
+  font-weight: 700;
 }

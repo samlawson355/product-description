@@ -9,11 +9,16 @@ const ReportModal = props => {
           <h4 id="reportBoxXS">X</h4>
         </div>
         <div id="centerReportModalS">
-          <div>Please tell us about the issue.</div>
+          <div id="tellUsIssueReportS">Please tell us about the issue.</div>
           <div id="dropDownReportModalS">
             <div id="whichPartReportS">Which part of the page?</div>
             <div className="downArrowS"></div>
           </div>
+          <div id="dropDownIssueReportModalS">
+            <div id="issueReportS">What's the issue?</div>
+            <div className="downArrowS"></div>
+          </div>
+          <div id="commentsReportModalS">Comments (optional)</div>
         </div>
       </div>
     </div>
