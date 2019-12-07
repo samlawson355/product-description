@@ -163,14 +163,16 @@ a:hover {
 }
 
 #starDropDownContainerS {
+  margin-top: 7px;
   position: absolute;
   z-index: 100;
   margin-left: -160px;
   background-color: rgb(252, 252, 252);
   border-radius: 5px;
-  border: 1px solid gray;
+  border: 1px solid rgb(207, 207, 207);
   height: 300px;
   width: 400px;
+  box-shadow: 0px 0px 3px rgb(0, 0, 0, 0.6);
 }
 
 #itemInStockS {
@@ -401,9 +403,20 @@ a:hover {
 
 #outerDealDropdownBoxS {
   margin-top: 10px;
-  border: 2px solid gray;
+  border: 2px solid rgb(207, 207, 207);
   border-radius: 4px;
-  height: 200px;
+  height: 150px;
   width: 600px;
   background-color: white;
+  box-shadow: 0px 0px 3px rgb(0, 0, 0, 0.6);
+}
+
+#buy5Save5S {
+  font-weight: 900;
+  margin-bottom: -12px;
+}
+
+#dealTextContainerS {
+  padding-left: 40px;
+  width: 75%;
 }
