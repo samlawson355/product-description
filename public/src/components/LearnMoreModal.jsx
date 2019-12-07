@@ -5,7 +5,9 @@ const LearnMoreModal = props => {
     <div id="innerLearnMoreModalContainerS">
       <div id="topBarLearnMoreS">
         <div id="learnMoreHowS">Here's how</div>
-        <div id="learnMoreXS">X</div>
+        <div id="learnMoreXS" onClick={props.closeLearnMoreModal}>
+          X
+        </div>
       </div>
       <div id="innerLearnMoreS">
         <h1 id="promoDetailsLearnMoreS">Promotion Details</h1>

@@ -60,6 +60,7 @@ class FlagAndDeals extends React.Component {
       learnMoreModalOpen: false
     });
   }
+
   componentDidMount() {
     this.dealGetter();
   }
@@ -86,13 +87,14 @@ class FlagAndDeals extends React.Component {
                       <DealDropdown
                         currentProduct={this.props.currentProduct}
                         openLearnMoreModal={this.openLearnMoreModal}
-                        closeLearnMoreModal={this.closeLearnMoreModal}
                       />
                     </div>
                   ) : null}
                   {this.state.learnMoreModalOpen ? (
                     <div id="outerLearnMoreModalContainerS">
-                      <LearnMoreModal />
+                      <LearnMoreModal
+                        closeLearnMoreModal={this.closeLearnMoreModal}
+                      />
                     </div>
                   ) : null}
                 </span>
