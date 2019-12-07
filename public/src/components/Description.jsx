@@ -66,7 +66,16 @@ class Description extends React.Component {
             ${this.props.currentProduct.productPrice}
           </span>
         </span>
-        <FlagAndDeals />
+        <div id="shippingInfoUnderPriceS">
+          {this.props.currentProduct.productCategory === "Prime Pantry" ? (
+            <div>
+              Pantry orders are delivered for $5.99 and do not qualify for FREE
+              Delivery. <a>Learn more</a>
+            </div>
+          ) : null}
+        </div>
+
+        <FlagAndDeals currentProduct={this.props.currentProduct} />
         <div id="grayLineDividerS"></div>
         <InStock />
         <div id="productDescriptionLineContainerS">

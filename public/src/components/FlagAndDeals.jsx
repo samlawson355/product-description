@@ -68,7 +68,7 @@ class FlagAndDeals extends React.Component {
                 </span>
                 <span id="theTriangleS"></span>{" "}
                 <span id="textAfterBlackFlagS">
-                  in <a>[category]</a>
+                  in <a>{this.props.currentProduct.productCategory}</a>
                 </span>
               </span>
             )}

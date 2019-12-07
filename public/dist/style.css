@@ -62,7 +62,7 @@ a:hover {
 }
 
 #productPriceContainerS {
-  height: 50px;
+  height: 20px;
 }
 
 #theWordPriceS {
@@ -75,6 +75,12 @@ a:hover {
   vertical-align: top;
   font-size: 1.1em;
   color: #b12704;
+}
+
+#shippingInfoUnderPriceS {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: smaller;
 }
 
 #flagAndDealsContainerS {
@@ -217,11 +223,14 @@ a:hover {
 
 #reportModalContainerS {
   position: absolute;
-  margin-top: -150px;
+  margin-top: -565px;
+  /* margin-left: -565px; */
+
   z-index: 10000;
   width: 300px;
   height: 350px;
-  border: 50px solid rgb(0, 0, 0, 0.3);
+
+  border: 100vh solid rgb(0, 0, 0, 0.3);
 }
 
 #innerReportModalContainerS {
@@ -299,6 +308,7 @@ a:hover {
   padding-left: 3%;
   font-size: 1.1em;
   font-weight: 900;
+  cursor: pointer;
 }
 
 .downArrowS {
@@ -334,6 +344,7 @@ a:hover {
   padding-left: 3%;
   font-size: 1.1em;
   font-weight: 900;
+  cursor: pointer;
 }
 
 #commentsReportModalS {
@@ -375,6 +386,7 @@ a:hover {
   font-size: 1.2em;
   height: 30px;
   width: 65px;
+  cursor: pointer;
   background: linear-gradient(
     0deg,
     rgba(233, 187, 36, 0.936) 0%,
