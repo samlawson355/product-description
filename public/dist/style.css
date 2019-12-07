@@ -163,6 +163,11 @@ a:hover {
 }
 
 #starDropDownContainerS {
+  opacity: 1;
+  animation-name: fadeOut;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.2s;
   margin-top: 7px;
   position: absolute;
   z-index: 100;
@@ -227,11 +232,9 @@ a:hover {
   position: absolute;
   margin-top: -565px;
   /* margin-left: -565px; */
-
   z-index: 10000;
   width: 300px;
   height: 350px;
-
   border: 100vh solid rgb(0, 0, 0, 0.3);
 }
 
@@ -402,6 +405,11 @@ a:hover {
 }
 
 #outerDealDropdownBoxS {
+  opacity: 1;
+  animation-name: fadeOut;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.2s;
   margin-top: 10px;
   border: 2px solid rgb(207, 207, 207);
   border-radius: 4px;
@@ -409,6 +417,15 @@ a:hover {
   width: 600px;
   background-color: white;
   box-shadow: 0px 0px 3px rgb(0, 0, 0, 0.6);
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 #buy5Save5S {

@@ -6,7 +6,8 @@ class FlagAndDeals extends React.Component {
     super(props);
     this.state = {
       flagToShow: null,
-      showDeals: false
+      showDeals: false,
+      mouseInDealArea: false
     };
     this.dealGetter = this.dealGetter.bind(this);
     this.dealPopDown = this.dealPopDown.bind(this);
@@ -28,9 +29,13 @@ class FlagAndDeals extends React.Component {
   }
 
   dealGoBack() {
-    this.setState({
-      showDeals: false
-    });
+    setTimeout(
+      () =>
+        this.setState({
+          showDeals: false
+        }),
+      800
+    );
   }
 
   componentDidMount() {
@@ -49,13 +54,17 @@ class FlagAndDeals extends React.Component {
                   <span id="dealsDropdownS">
                     <a
                       onMouseEnter={this.dealPopDown}
-                      onMouseLeave={this.dealGoBack}
+                      // onMouseLeave={this.dealGoBack}
                     >
                       Buy 5, save 5%. 1 Applicable Promotion(s)
                     </a>
                   </span>
                   {this.state.showDeals ? (
-                    <div id="dealDropdownOuterContainerS">
+                    <div
+                      id="dealDropdownOuterContainerS"
+                      // onMouseEnter={this.dealPopDown}
+                      onMouseLeave={this.dealGoBack}
+                    >
                       <DealDropdown />
                     </div>
                   ) : null}

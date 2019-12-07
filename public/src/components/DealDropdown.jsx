@@ -10,7 +10,7 @@ const DealDropdown = props => {
         Save up to 15% in Pantry. Buy any 5 Pantry items to save 5% on your
         order. Buy any 10, save 10%. Buy 15 or more and save 15% on your entire
         Pantry order. Discount applied at checkout. Shop all Pantry at
-        www.amazon.com/pantry. Offered by Prime Pantry. <a>Here's how </a>
+        www.gammazon.com/pantry. Offered by Prime Pantry. <a>Here's how </a>
         (restrictions apply)
       </div>
     </div>

@@ -18,9 +18,13 @@ class Stars extends React.Component {
   }
 
   hoverGoBack() {
-    this.setState({
-      dropDownDisplayed: false
-    });
+    setTimeout(
+      () =>
+        this.setState({
+          dropDownDisplayed: false
+        }),
+      800
+    );
   }
 
   render() {
