@@ -231,7 +231,7 @@ a:hover {
   position: absolute;
   margin-top: -565px;
   /* margin-left: -565px; */
-  z-index: 10000;
+  z-index: 5000;
   width: 300px;
   height: 350px;
   border: 100vh solid rgb(0, 0, 0, 0.3);
@@ -292,6 +292,7 @@ a:hover {
 }
 
 #dropDownReportModalS {
+  cursor: pointer;
   justify-content: space-between;
   display: flex;
   border: 1px solid gray;
@@ -306,12 +307,19 @@ a:hover {
   );
 }
 
+#dropDownReportModalS:hover {
+  background: linear-gradient(
+    0deg,
+    rgba(199, 199, 199, 0.936) 0%,
+    rgba(207, 207, 207, 0.605) 79%
+  );
+}
+
 #whichPartReportS {
   margin-top: 7.5px;
   padding-left: 3%;
   font-size: 1.1em;
   font-weight: 900;
-  cursor: pointer;
 }
 
 .downArrowS {
@@ -328,6 +336,8 @@ a:hover {
 }
 
 #dropDownIssueReportModalS {
+  position: relative;
+  cursor: pointer;
   justify-content: space-between;
   display: flex;
   border: 1px solid gray;
@@ -342,12 +352,36 @@ a:hover {
   );
 }
 
+#dropDownIssueReportModalS:hover {
+  background: linear-gradient(
+    0deg,
+    rgba(199, 199, 199, 0.936) 0%,
+    rgba(207, 207, 207, 0.605) 79%
+  );
+}
+
+#dropDownIssueReportModalContentS {
+  display: none;
+  z-index: 5001;
+  position: absolute;
+  margin-top: 30px;
+  background-color: white;
+  border: 2px solid black;
+  width: 100%;
+  height: 75px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+#dropDownIssueReportModalS:hover #dropDownIssueReportModalContentS {
+  display: block;
+}
+
 #issueReportS {
   margin-top: 7.5px;
   padding-left: 3%;
   font-size: 1.1em;
   font-weight: 900;
-  cursor: pointer;
 }
 
 #commentsReportModalS {
@@ -510,7 +544,7 @@ a:hover {
 
 #learnMoreXS {
   padding-right: 5%;
-  margin-top: 2.7%;
+  margin-top: 2.3%;
   font-weight: 900;
   cursor: pointer;
 }

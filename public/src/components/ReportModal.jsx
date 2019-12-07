@@ -19,6 +19,11 @@ const ReportModal = props => {
           <div id="dropDownIssueReportModalS">
             <div id="issueReportS">What's the issue?</div>
             <div className="downArrowS"></div>
+            <div id="dropDownIssueReportModalContentS">
+              <div>Item 1</div>
+              <div>Item 2</div>
+              <div>Item 3</div>
+            </div>
           </div>
           <div id="commentsReportModalS">Comments (optional)</div>
           <textarea id="reportCommentFieldS" type="text"></textarea>

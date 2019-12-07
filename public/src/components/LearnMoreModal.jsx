@@ -6,7 +6,7 @@ const LearnMoreModal = props => {
       <div id="topBarLearnMoreS">
         <div id="learnMoreHowS">Here's how</div>
         <div id="learnMoreXS" onClick={props.closeLearnMoreModal}>
-          X
+          x
         </div>
       </div>
       <div id="innerLearnMoreS">
