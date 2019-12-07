@@ -14,7 +14,6 @@ class Report extends React.Component {
     this.changeTopSelection = this.changeTopSelection.bind(this);
     this.changeBottomSelection = this.changeBottomSelection.bind(this);
   }
-
   openReportModal() {
     this.setState({
       reportModalOpen: true
