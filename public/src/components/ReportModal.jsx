@@ -25,7 +25,7 @@ const ReportModal = props => {
           <div id="bottomReportModalS">
             <div id="thatIFromReportS">i</div>
             <div id="reportDisclaimerS">
-              Please don't enter person info. For questions about an order, go
+              Please don't enter personal info. For questions about an order, go
               to <a>Your Account</a>.
             </div>
             <input

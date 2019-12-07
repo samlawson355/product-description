@@ -7,10 +7,14 @@ const DealDropdown = props => {
         <li id="buy5Save5S">Buy 5, save 5%.</li>
       </ul>
       <div id="dealTextContainerS">
-        Save up to 15% in Pantry. Buy any 5 Pantry items to save 5% on your
-        order. Buy any 10, save 10%. Buy 15 or more and save 15% on your entire
-        Pantry order. Discount applied at checkout. Shop all Pantry at
-        www.gammazon.com/pantry. Offered by Prime Pantry. <a>Here's how </a>
+        Save up to 15% in {props.currentProduct.productCategory}. Buy any 5{" "}
+        {props.currentProduct.productCategory} items to save 5% on your order.
+        Buy any 10, save 10%. Buy 15 or more and save 15% on your entire{" "}
+        {props.currentProduct.productCategory} order. Discount applied at
+        checkout. Shop all Pantry at www.gammazon.com/
+        {props.currentProduct.productCategory}. Offered by{" "}
+        {props.currentProduct.productCategory}.{" "}
+        <a onClick={props.openLearnMoreModal}>Here's how </a>
         (restrictions apply)
       </div>
     </div>

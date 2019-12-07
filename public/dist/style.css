@@ -437,3 +437,45 @@ a:hover {
   padding-left: 40px;
   width: 75%;
 }
+
+#outerLearnMoreModalContainerS {
+  position: absolute;
+  z-index: 2001;
+  width: 380px;
+  height: 600px;
+  border: 2px solid black;
+  background-color: white;
+}
+#innerLearnMoreModalContainerS {
+  /* position: relative; */
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+#topBarLearnMoreS {
+  font-weight: 900;
+  font-size: small;
+  display: flex;
+  justify-content: space-between;
+  background: rgb(213, 213, 213);
+  background: linear-gradient(
+    0deg,
+    rgba(213, 213, 213) 0%,
+    rgba(255, 255, 255) 79%
+  );
+  width: 100%;
+  height: 6%;
+  border-bottom: 1px solid gray;
+  position: absolute;
+}
+
+#innerLearnMoreS {
+  margin-top: 40px;
+}
+
+#innerLearnMoreS ul,
+#innerLearnMoreS li {
+  padding-bottom: 6px;
+}

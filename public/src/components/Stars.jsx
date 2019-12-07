@@ -30,7 +30,7 @@ class Stars extends React.Component {
   render() {
     return (
       <div id="starsContainerS">
-        <div onMouseEnter={this.hoverDropDown} onMouseLeave={this.hoverGoBack}>
+        <div onMouseEnter={this.hoverDropDown}>
           {this.props.currentProduct.productRating}/5
         </div>
         <div>
