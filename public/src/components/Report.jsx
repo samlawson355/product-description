@@ -8,6 +8,7 @@ class Report extends React.Component {
     };
     this.openReportModal = this.openReportModal.bind(this);
     this.closeReportModal = this.closeReportModal.bind(this);
+    this.submitReport = this.submitReport.bind(this);
   }
 
   openReportModal() {
@@ -22,6 +23,10 @@ class Report extends React.Component {
     });
   }
 
+  submitReport() {
+    alert("Cool story BRO");
+    this.closeReportModal();
+  }
   render() {
     return (
       <span>
@@ -32,7 +37,12 @@ class Report extends React.Component {
           </a>
         </span>
         {this.state.reportModalOpen ? (
-          <ReportModal closeReportModal={this.closeReportModal} />
+          <div id="reportModalComponentS">
+            <ReportModal
+              closeReportModal={this.closeReportModal}
+              submitReport={this.submitReport}
+            />
+          </div>
         ) : null}
       </span>
     );

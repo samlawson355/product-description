@@ -28,7 +28,12 @@ const ReportModal = props => {
               Please don't enter person info. For questions about an order, go
               to <a>Your Account</a>.
             </div>
-            <input type="button" id="submitReportButtonS" value="Submit" />
+            <input
+              type="button"
+              id="submitReportButtonS"
+              value="Submit"
+              onClick={props.submitReport}
+            />
           </div>
         </div>
       </div>
