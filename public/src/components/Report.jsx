@@ -43,6 +43,7 @@ class Report extends React.Component {
     alert("Cool story BRO");
     this.closeReportModal();
   }
+
   render() {
     return (
       <span>
