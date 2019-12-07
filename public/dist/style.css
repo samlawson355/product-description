@@ -381,3 +381,17 @@ a:hover {
     rgba(255, 228, 138, 0.936) 79%
   );
 }
+
+#dealDropdownOuterContainerS {
+  z-index: 1000;
+  position: absolute;
+}
+
+#outerDealDropdownBoxS {
+  margin-top: 10px;
+  border: 2px solid gray;
+  border-radius: 4px;
+  height: 200px;
+  width: 600px;
+  background-color: white;
+}

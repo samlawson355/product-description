@@ -47,11 +47,18 @@ class FlagAndDeals extends React.Component {
                 <span id="orangeFlagS">Extra Savings</span>
                 <span id="dealContainerS">
                   <span id="dealsDropdownS">
-                    <a>Buy 5, save 5%. 1 Applicable Promotion(s)</a>
+                    <a
+                      onMouseEnter={this.dealPopDown}
+                      onMouseLeave={this.dealGoBack}
+                    >
+                      Buy 5, save 5%. 1 Applicable Promotion(s)
+                    </a>
                   </span>
-                  <div>
-                    <DealDropdown />
-                  </div>
+                  {this.state.showDeals ? (
+                    <div id="dealDropdownOuterContainerS">
+                      <DealDropdown />
+                    </div>
+                  ) : null}
                 </span>
               </span>
             ) : (
