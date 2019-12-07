@@ -6,7 +6,9 @@ const ReportModal = props => {
       <div id="innerReportModalContainerS">
         <div id="topBarOfReportModalS">
           <h3 id="reportIssueS">Report an issue</h3>
-          <h4 id="reportBoxXS">X</h4>
+          <h4 id="reportBoxXS" onClick={props.closeReportModal}>
+            x
+          </h4>
         </div>
         <div id="centerReportModalS">
           <div id="tellUsIssueReportS">Please tell us about the issue.</div>
@@ -20,6 +22,14 @@ const ReportModal = props => {
           </div>
           <div id="commentsReportModalS">Comments (optional)</div>
           <textarea id="reportCommentFieldS" type="text"></textarea>
+          <div id="bottomReportModalS">
+            <div id="thatIFromReportS">i</div>
+            <div id="reportDisclaimerS">
+              Please don't enter person info. For questions about an order, go
+              to <a>Your Account</a>.
+            </div>
+            <input type="button" id="submitReportButtonS" value="Submit" />
+          </div>
         </div>
       </div>
     </div>

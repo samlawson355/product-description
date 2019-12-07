@@ -6,12 +6,11 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentProduct: null,
-      reportModalOpen: false
+      currentProduct: null
     };
 
     this.selectProduct = this.selectProduct.bind(this);
-    this.reportModal = this.reportModal.bind(this);
+    // this.reportModal = this.reportModal.bind(this);
   }
 
   selectProduct(event) {
@@ -25,12 +24,12 @@ class App extends React.Component {
     );
   }
 
-  reportModal() {
-    console.log("modal ran");
-    this.setState({
-      reportModalOpen: !this.state.reportModalOpen
-    });
-  }
+  // reportModal() {
+  //   console.log("modal ran");
+  //   this.setState({
+  //     reportModalOpen: !this.state.reportModalOpen
+  //   });
+  // }
 
   render() {
     return !this.state.currentProduct ? (
@@ -38,11 +37,7 @@ class App extends React.Component {
         Click for products
       </button>
     ) : (
-      <Description
-        currentProduct={this.state.currentProduct}
-        reportModalOpen={this.state.reportModalOpen}
-        reportModal={this.reportModal}
-      />
+      <Description currentProduct={this.state.currentProduct} />
     );
   }
 }

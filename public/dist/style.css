@@ -212,12 +212,13 @@ a:hover {
   display: flex;
   position: relative;
   z-index: 1999;
-  border: 2px solid rgb(128, 128, 128);
+  border: 1px solid rgba(226, 226, 226, 0.5);
   border-radius: 2px;
   width: 101%;
   height: 100%;
   background-color: white;
   font-size: smaller;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.6);
 }
 
 #topBarOfReportModalS {
@@ -240,11 +241,14 @@ a:hover {
 #reportIssueS {
   padding-left: 5%;
   margin-top: 2.5%;
+  font-weight: 900;
 }
 
 #reportBoxXS {
   padding-right: 5%;
-  margin-top: 2.8%;
+  margin-top: 2.7%;
+  font-weight: 900;
+  cursor: pointer;
 }
 
 #centerReportModalS {
@@ -266,7 +270,6 @@ a:hover {
   width: 270px;
   height: 30px;
   border-radius: 3px;
-  background: rgb(213, 213, 213);
   background: linear-gradient(
     0deg,
     rgba(213, 213, 213, 0.9360119047619048) 0%,
@@ -302,7 +305,6 @@ a:hover {
   width: 270px;
   height: 30px;
   border-radius: 3px;
-  background: rgb(213, 213, 213);
   background: linear-gradient(
     0deg,
     rgba(213, 213, 213, 0.9360119047619048) 0%,
@@ -328,4 +330,37 @@ a:hover {
   height: 60px;
   border: 1px solid gray;
   border-radius: 2px;
+  box-shadow: inset 0.5px 0.5px rgba(68, 68, 68, 0.6);
+}
+
+#thatIFromReportS {
+  padding-top: 8px;
+  margin-left: 5px;
+  float: left;
+  font-size: medium;
+  font-weight: 900;
+  color: rgb(14, 181, 247);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#reportDisclaimerS {
+  width: 250px;
+  padding-top: 5px;
+  padding-left: 15px;
+}
+
+#submitReportButtonS {
+  float: right;
+  margin-top: 10%;
+  border: 1px solid #846a29;
+  border-radius: 3px;
+  font-family: "Amazon Ember", Arial, sans-serif;
+  font-size: 1.2em;
+  height: 30px;
+  width: 65px;
+  background: linear-gradient(
+    0deg,
+    rgba(233, 187, 36, 0.936) 0%,
+    rgba(255, 228, 138, 0.936) 79%
+  );
 }

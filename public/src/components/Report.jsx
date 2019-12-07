@@ -3,7 +3,23 @@ import ReportModal from "./ReportModal.jsx";
 class Report extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      reportModalOpen: false
+    };
+    this.openReportModal = this.openReportModal.bind(this);
+    this.closeReportModal = this.closeReportModal.bind(this);
+  }
+
+  openReportModal() {
+    this.setState({
+      reportModalOpen: true
+    });
+  }
+
+  closeReportModal() {
+    this.setState({
+      reportModalOpen: false
+    });
   }
 
   render() {
@@ -11,11 +27,13 @@ class Report extends React.Component {
       <span>
         <div id="talkBubbleS"></div>
         <span id="reportInfoS">
-          <a onClick={this.props.reportModal}>
+          <a onClick={this.openReportModal}>
             Report incorrect product information.
           </a>
         </span>
-        <ReportModal />
+        {this.state.reportModalOpen ? (
+          <ReportModal closeReportModal={this.closeReportModal} />
+        ) : null}
       </span>
     );
   }
