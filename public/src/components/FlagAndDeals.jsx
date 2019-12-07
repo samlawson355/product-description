@@ -1,12 +1,16 @@
 import React from "react";
+import DealDropdown from "./DealDropdown.jsx";
 
 class FlagAndDeals extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      flagToShow: null
+      flagToShow: null,
+      showDeals: false
     };
     this.dealGetter = this.dealGetter.bind(this);
+    this.dealPopDown = this.dealPopDown.bind(this);
+    this.dealGoBack = this.dealGoBack.bind(this);
   }
 
   dealGetter() {
@@ -14,6 +18,18 @@ class FlagAndDeals extends React.Component {
     let flagChooser = deals[~~(Math.random() * deals.length)];
     this.setState({
       flagToShow: flagChooser
+    });
+  }
+
+  dealPopDown() {
+    this.setState({
+      showDeals: true
+    });
+  }
+
+  dealGoBack() {
+    this.setState({
+      showDeals: false
     });
   }
 
@@ -31,8 +47,11 @@ class FlagAndDeals extends React.Component {
                 <span id="orangeFlagS">Extra Savings</span>
                 <span id="dealContainerS">
                   <span id="dealsDropdownS">
-                    <a>Buy 5, save 5%. 3 Applicable Promotion(s)</a>
+                    <a>Buy 5, save 5%. 1 Applicable Promotion(s)</a>
                   </span>
+                  <div>
+                    <DealDropdown />
+                  </div>
                 </span>
               </span>
             ) : (
