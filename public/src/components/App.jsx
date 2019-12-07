@@ -24,7 +24,7 @@ class App extends React.Component {
 
   render() {
     return !this.state.currentProduct ? (
-      <button onClick={this.selectProduct} value="11">
+      <button onClick={this.selectProduct} value="100">
         Click for products
       </button>
     ) : (

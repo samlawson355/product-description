@@ -67,12 +67,10 @@ class Description extends React.Component {
           </span>
         </span>
         <div id="shippingInfoUnderPriceS">
-          {this.props.currentProduct.productCategory === "Prime Pantry" ? (
-            <div>
-              Pantry orders are delivered for $5.99 and do not qualify for FREE
-              Delivery. <a>Learn more</a>
-            </div>
-          ) : null}
+          <div>
+            {this.props.currentProduct.productCategory} orders are delivered for
+            $5.99 and do not qualify for FREE Delivery. <a>Learn more</a>
+          </div>
         </div>
 
         <FlagAndDeals currentProduct={this.props.currentProduct} />
