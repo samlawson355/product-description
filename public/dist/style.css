@@ -586,3 +586,7 @@ a:hover {
   padding-bottom: 20px;
   font-weight: 500;
 }
+
+.MuiRating-root {
+  margin-left: -3px;
+}
