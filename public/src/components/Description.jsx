@@ -7,6 +7,8 @@ import InStock from "./InStock.jsx";
 import Report from "./Report.jsx";
 import FlagAndDeals from "./FlagAndDeals.jsx";
 import OrderByDates from "./OrderByDates.jsx";
+import DescriptionInformation from "./DescriptionInformation.jsx";
+import PriceAndShipping from "./PriceAndShipping.jsx";
 import moment from "moment";
 
 class Description extends React.Component {
@@ -136,18 +138,7 @@ class Description extends React.Component {
           <span id="theLineS">|</span>
           <QuestionsAnswered currentProduct={this.props.currentProduct} />
         </span>
-        <span id="productPriceContainerS">
-          <span id="theWordPriceS">Price: </span>
-          <span id="productPriceS">
-            ${this.props.currentProduct.productPrice}
-          </span>
-        </span>
-        <div id="shippingInfoUnderPriceS">
-          <div>
-            {this.props.currentProduct.productCategory} orders are delivered for
-            $5.99 and do not qualify for FREE Delivery. <a>Learn more</a>
-          </div>
-        </div>
+        <PriceAndShipping currentProduct={this.props.currentProduct} />
         <FlagAndDeals currentProduct={this.props.currentProduct} />
         <div id="grayLineDividerS"></div>
         <InStock inStock={this.state.inStock} />
@@ -160,17 +151,10 @@ class Description extends React.Component {
           orderByDateHours={this.state.orderByDateHours}
           orderByDateMinutes={this.state.orderByDateMinutes}
         />
-        <div id="productDescriptionLineContainerS">
-          <ul>
-            {this.descriptionCleaner(this.props.currentProduct.productDesc).map(
-              (line, id) => (
-                <li key={id} className="productDescriptionLineS">
-                  {line}
-                </li>
-              )
-            )}
-          </ul>
-        </div>
+        <DescriptionInformation
+          currentProduct={this.props.currentProduct}
+          descriptionCleaner={this.descriptionCleaner}
+        />
         <span id="reportButtonContainerS">
           <Report
             reportModal={this.props.reportModal}
