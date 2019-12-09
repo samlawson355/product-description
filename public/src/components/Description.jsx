@@ -12,6 +12,7 @@ class Description extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      inStock: null,
       wantItDate: null,
       orderByDateHours: null,
       orderByDateMinutes: null
@@ -22,6 +23,7 @@ class Description extends React.Component {
     this.orderByDate = this.orderByDate.bind(this);
     this.hourDateCleaner = this.hourDateCleaner.bind(this);
     this.minuteDateCleaner = this.minuteDateCleaner.bind(this);
+    this.availableOrNot = this.availableOrNot.bind(this);
   }
 
   descriptionCleaner(desc) {
@@ -49,8 +51,6 @@ class Description extends React.Component {
     );
   }
 
-  // moment().format("MMMM Do YYYY, h:mm:ss a")
-
   dateMaker() {
     let date = moment()
       .add(4, "days")
@@ -73,6 +73,7 @@ class Description extends React.Component {
           .fromNow()
       )
     });
+
     setInterval(
       () =>
         this.setState({
@@ -101,9 +102,17 @@ class Description extends React.Component {
     return `and ${cleanMinutes}`;
   }
 
+  availableOrNot() {
+    let stock = [true, true, true, true, true, true, false];
+    let picker = stock[~~(Math.random() * stock.length)];
+    this.setState({
+      inStock: picker
+    });
+  }
   componentDidMount() {
     this.dateMaker();
     this.orderByDate();
+    this.availableOrNot();
   }
 
   render() {
@@ -140,21 +149,25 @@ class Description extends React.Component {
         </div>
         <FlagAndDeals currentProduct={this.props.currentProduct} />
         <div id="grayLineDividerS"></div>
-        <InStock />
+        <InStock inStock={this.state.inStock} />
         <div id="shipsFromS">
           Ships from and sold by {this.props.currentProduct.productCategory}
         </div>
         <div id="wantItByS">
           <div id="giveDateS">Want it by {this.state.wantItDate}?</div>
-          <div id="orderByS">
-            <div>
-              Order within the next{" "}
-              <span id="countdownTimerS">
-                {this.state.orderByDateHours} {this.state.orderByDateMinutes}
-              </span>
-              .
+          {this.state.inStock ? (
+            <div id="orderByS">
+              <div>
+                Order within the next{" "}
+                <span id="countdownTimerS">
+                  {this.state.orderByDateHours} {this.state.orderByDateMinutes}
+                </span>
+                .
+              </div>
             </div>
-          </div>
+          ) : (
+            <div id="orderByS">Too bad, we're out.</div>
+          )}
         </div>
         <div id="productDescriptionLineContainerS">
           <ul>
