@@ -54,15 +54,17 @@ class Report extends React.Component {
           </a>
         </span>
         {this.state.reportModalOpen ? (
-          <div id="reportModalComponentS">
-            <ReportModal
-              closeReportModal={this.closeReportModal}
-              submitReport={this.submitReport}
-              changeTopSelection={this.changeTopSelection}
-              topSelection={this.state.topSelection}
-              changeBottomSelection={this.changeBottomSelection}
-              bottomSelection={this.state.bottomSelection}
-            />
+          <div id="underReportBackgroundS" onClick={this.closeReportModal}>
+            <div id="reportModalComponentS">
+              <ReportModal
+                closeReportModal={this.closeReportModal}
+                submitReport={this.submitReport}
+                changeTopSelection={this.changeTopSelection}
+                topSelection={this.state.topSelection}
+                changeBottomSelection={this.changeBottomSelection}
+                bottomSelection={this.state.bottomSelection}
+              />
+            </div>
           </div>
         ) : null}
       </span>
