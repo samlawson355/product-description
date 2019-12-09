@@ -71,7 +71,6 @@ class Stars extends React.Component {
       <div>
         <div id="starsContainerS" onMouseEnter={this.hoverDropDown}>
           <Rating
-            id="testRating1S"
             name="numOfStarsS"
             value={this.state.star1 ? 1 : 0}
             readOnly={true}
@@ -80,7 +79,6 @@ class Stars extends React.Component {
             size="small"
           />
           <Rating
-            id="testRating2S"
             name="numOfStarsS"
             value={this.state.star2 ? 1 : 0}
             readOnly={true}
@@ -89,7 +87,6 @@ class Stars extends React.Component {
             size="small"
           />
           <Rating
-            id="testRating3S"
             name="numOfStarsS"
             value={this.state.star3 ? 1 : 0}
             readOnly={true}
@@ -98,7 +95,6 @@ class Stars extends React.Component {
             size="small"
           />
           <Rating
-            id="testRating4S"
             name="numOfStarsS"
             value={this.state.star4 ? 1 : 0}
             readOnly={true}
@@ -107,7 +103,6 @@ class Stars extends React.Component {
             size="small"
           />
           <Rating
-            id="testRating5S"
             name="numOfStarsS"
             value={this.state.star5 ? 1 : 0}
             readOnly={true}
@@ -115,10 +110,15 @@ class Stars extends React.Component {
             max={1}
             size="small"
           />
-          {/* {this.props.currentProduct.productRating}/5 */}
         </div>
         <div>
           <StarsDropdown
+            currentProduct={this.props.currentProduct}
+            star1={this.state.star1}
+            star2={this.state.star2}
+            star3={this.state.star3}
+            star4={this.state.star4}
+            star5={this.state.star5}
             hoverDropDown={this.hoverDropDown}
             hoverGoBack={this.hoverGoBack}
             dropDownDisplayed={this.state.dropDownDisplayed}
