@@ -6,6 +6,7 @@ import QuestionsAnswered from "./QuestionsAnswered.jsx";
 import InStock from "./InStock.jsx";
 import Report from "./Report.jsx";
 import FlagAndDeals from "./FlagAndDeals.jsx";
+import OrderByDates from "./OrderByDates.jsx";
 import moment from "moment";
 
 class Description extends React.Component {
@@ -153,22 +154,12 @@ class Description extends React.Component {
         <div id="shipsFromS">
           Ships from and sold by {this.props.currentProduct.productCategory}
         </div>
-        <div id="wantItByS">
-          <div id="giveDateS">Want it by {this.state.wantItDate}?</div>
-          {this.state.inStock ? (
-            <div id="orderByS">
-              <div>
-                Order within the next{" "}
-                <span id="countdownTimerS">
-                  {this.state.orderByDateHours} {this.state.orderByDateMinutes}
-                </span>
-                .
-              </div>
-            </div>
-          ) : (
-            <div id="orderByS">Too bad, we're out.</div>
-          )}
-        </div>
+        <OrderByDates
+          inStock={this.state.inStock}
+          wantItDate={this.state.wantItDate}
+          orderByDateHours={this.state.orderByDateHours}
+          orderByDateMinutes={this.state.orderByDateMinutes}
+        />
         <div id="productDescriptionLineContainerS">
           <ul>
             {this.descriptionCleaner(this.props.currentProduct.productDesc).map(
