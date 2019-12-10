@@ -55,6 +55,10 @@ class Description extends React.Component {
   }
 
   dateMaker() {
+    moment.relativeTimeThreshold("ss", 0);
+    moment.relativeTimeThreshold("s", 60);
+    moment.relativeTimeThreshold("m", 60);
+    moment.relativeTimeThreshold("h", 24);
     let date = moment()
       .add(4, "days")
       .format("dddd, MMM Do");
@@ -64,6 +68,10 @@ class Description extends React.Component {
   }
 
   orderByDate() {
+    moment.relativeTimeThreshold("ss", 0);
+    moment.relativeTimeThreshold("s", 60);
+    moment.relativeTimeThreshold("m", 60);
+    moment.relativeTimeThreshold("h", 24);
     this.setState({
       orderByDateHours: this.hourDateCleaner(
         moment()
