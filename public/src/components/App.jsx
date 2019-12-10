@@ -14,7 +14,7 @@ class App extends React.Component {
   selectProduct(event) {
     axios({
       method: "GET",
-      url: `/${event.target.value}`
+      url: `http://product-description-env.s28iuq9mfy.us-east-2.elasticbeanstalk.com/products/${event.target.value}`
     }).then(data =>
       this.setState({
         currentProduct: data.data[0]
