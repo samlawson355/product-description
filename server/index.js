@@ -17,5 +17,5 @@ app.get(`/:id`, (req, res) => {
     }
   });
 });
-
-app.listen(port, console.log(`Listening on port ${port}...`));
+// app.set("port", process.env.PORT || 7777);
+app.listen(port, console.log(process.env));
