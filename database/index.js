@@ -1,10 +1,11 @@
 const mysql = require("mysql");
+const mysqlConfig = require("./mysqlConfig.js");
 
 const productDB = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "password",
-  database: "amazonProductDescriptions"
+  host: mysqlConfig.host,
+  user: mysqlConfig.user,
+  password: mysqlConfig.password,
+  database: mysqlConfig.database
 });
 
 productDB.connect(console.log("connected to DB"));

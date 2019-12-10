@@ -104,6 +104,7 @@ class FlagAndDeals extends React.Component {
                 <span id="blackFlagS">
                   Gammazon's <span id="theWordChoiceS">Choice</span>
                 </span>
+                <span id="theTriangleS"></span>{" "}
                 <span id="textAfterBlackFlagS">
                   in <a>{this.props.currentProduct.productCategory}</a>
                 </span>
