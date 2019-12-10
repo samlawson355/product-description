@@ -40,7 +40,7 @@ class Report extends React.Component {
   }
 
   submitReport() {
-    alert("Cool story BRO");
+    alert("Thank you for your submission.");
     this.closeReportModal();
   }
 
