@@ -1,14 +1,7 @@
 import React from "react";
-import ProductMaker from "./ProductMaker.jsx";
-import Stars from "./Stars.jsx";
-import Ratings from "./Ratings.jsx";
-import QuestionsAnswered from "./QuestionsAnswered.jsx";
-import InStock from "./InStock.jsx";
-import Report from "./Report.jsx";
-import FlagAndDeals from "./FlagAndDeals.jsx";
-import OrderByDates from "./OrderByDates.jsx";
-import DescriptionInformation from "./DescriptionInformation.jsx";
-import PriceAndShipping from "./PriceAndShipping.jsx";
+import AboveTheLine from "./AboveTheLine.jsx";
+import BelowTheLine from "./BelowTheLine.jsx";
+
 import moment from "moment";
 
 class Description extends React.Component {
@@ -129,46 +122,21 @@ class Description extends React.Component {
   render() {
     return (
       <div id="productDescriptionContainerS">
-        <div id="titleOfProductContainerS">
-          <div id="titleOfProductS">
-            {this.props.currentProduct.productName}
-          </div>
-        </div>
-        <div id="productMakerContainerS">
-          <ProductMaker
-            currentProduct={this.props.currentProduct}
-            goToProductMaker={this.goToProductMaker}
-          />
-        </div>
-        <span id="starsRatingsQuestionsContainerS">
-          <Stars currentProduct={this.props.currentProduct} />
-          <Ratings currentProduct={this.props.currentProduct} />
-          <span id="theLineS">|</span>
-          <QuestionsAnswered currentProduct={this.props.currentProduct} />
-        </span>
-        <PriceAndShipping currentProduct={this.props.currentProduct} />
-        <FlagAndDeals currentProduct={this.props.currentProduct} />
+        <AboveTheLine
+          currentProduct={this.props.currentProduct}
+          goToProductMaker={this.goToProductMaker}
+        />
         <div id="grayLineDividerS"></div>
-        <InStock inStock={this.state.inStock} />
-        <div id="shipsFromS">
-          Ships from and sold by {this.props.currentProduct.productCategory}
-        </div>
-        <OrderByDates
+        <BelowTheLine
           inStock={this.state.inStock}
+          currentProduct={this.props.currentProduct}
+          reportModal={this.props.reportModal}
+          reportModalOpen={this.props.reportModalOpen}
+          descriptionCleaner={this.descriptionCleaner}
           wantItDate={this.state.wantItDate}
           orderByDateHours={this.state.orderByDateHours}
           orderByDateMinutes={this.state.orderByDateMinutes}
         />
-        <DescriptionInformation
-          currentProduct={this.props.currentProduct}
-          descriptionCleaner={this.descriptionCleaner}
-        />
-        <span id="reportButtonContainerS">
-          <Report
-            reportModal={this.props.reportModal}
-            reportModalOpen={this.props.reportModalOpen}
-          />
-        </span>
       </div>
     );
   }
