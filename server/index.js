@@ -21,7 +21,6 @@ app.get(`/:id`, (req, res) => {
 });
 
 // app.get(`products/:id`, (req, res) => {
-//   // res.send(req);
 //   let id = req.params.id;
 //   console.log(id);
 //   db.getProduct(id, (err, results) => {
