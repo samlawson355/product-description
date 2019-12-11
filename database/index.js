@@ -12,13 +12,16 @@ productDB.connect(console.log("connected to DB"));
 
 const getProduct = (productID, callback) => {
   console.log(productID);
-  productDB.query("SELECT * FROM products;", (err, results) => {
-    if (err) {
-      console.log(err);
-    } else {
-      callback(err, results);
+  productDB.query(
+    `SELECT * FROM products where id = ${productID};`,
+    (err, results) => {
+      if (err) {
+        console.log(err);
+      } else {
+        callback(err, results);
+      }
     }
-  });
+  );
 };
 
 module.exports = { getProduct };
