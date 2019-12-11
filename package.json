@@ -8,9 +8,9 @@
     "node": ">=6.13.0"
   },
   "scripts": {
-    "start": "nodemon server/index.js",
     "react-dev": "webpack -d --watch",
-    "build": "webpack --mode production"
+    "start": "NODE_ENV=development webpack -d --watch & live-server --port=9000 --watch=dist --open=dist",
+    "build": "NODE_ENV=production webpack -p"
   },
   "dependencies": {
     "@material-ui/core": "4.7.1",
@@ -29,9 +29,13 @@
   },
   "devDependencies": {
     "babel-core": "^6.23.1",
-    "babel-loader": "^6.3.2",
+    "babel-loader": "^6.4.1",
     "babel-preset-es2015": "^6.22.0",
     "babel-preset-react": "^6.23.0",
+    "css-loader": "^3.3.0",
+    "file-loader": "^5.0.2",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.1",
     "webpack": "^2.7.0"
   }
 }
