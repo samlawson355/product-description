@@ -4,6 +4,7 @@ const mysqlConfig = require("./mysqlConfig.js");
 const productDB = mysql.createConnection({
   host: mysqlConfig.host,
   user: mysqlConfig.user,
+  port: 3306,
   password: mysqlConfig.password,
   database: mysqlConfig.database
 });
