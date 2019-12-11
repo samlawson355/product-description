@@ -19,6 +19,7 @@ class App extends React.Component {
         },
         url: `http://node-express-env.bcgwijp6ik.us-east-2.elasticbeanstalk.com/${event.target.value}`
       })
+      .catch(console.log)
       .then(data =>
         this.setState({
           currentProduct: data.data[0]
