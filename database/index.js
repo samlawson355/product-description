@@ -11,7 +11,6 @@ const productDB = mysql.createConnection({
 productDB.connect(console.log("connected to DB"));
 
 const getProduct = (productID, callback) => {
-  console.log(productID);
   productDB.query(
     `SELECT * FROM products where id = ${productID};`,
     (err, results) => {

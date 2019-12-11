@@ -14,16 +14,16 @@ class App extends React.Component {
   selectProduct(event) {
     axios({
       method: "GET",
-      url: `/products/${event.target.value}`
-    }).then(console.log);
-    // .then(data =>
-    //   this.setState({
-    //     currentProduct: data.data[0]
-    //   })
-    // );
+      url: `/${event.target.value}`
+    }).then(data =>
+      this.setState({
+        currentProduct: data.data[0]
+      })
+    );
   }
 
   render() {
+    console.log("test");
     return !this.state.currentProduct ? (
       <button onClick={this.selectProduct} value="70">
         Click for products
