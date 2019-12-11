@@ -15,11 +15,12 @@ class App extends React.Component {
     axios({
       method: "GET",
       url: `/products/${event.target.value}`
-    }).then(data =>
-      this.setState({
-        currentProduct: data.data[0]
-      })
-    );
+    }).then(console.log);
+    // .then(data =>
+    //   this.setState({
+    //     currentProduct: data.data[0]
+    //   })
+    // );
   }
 
   render() {
