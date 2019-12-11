@@ -28,7 +28,7 @@
 
 const path = require("path");
 const DIST_FOLDER = path.join(__dirname, "/public/dist");
-const ENTRY_FILE = "/public/src/index.jsx";
+const ENTRY_FILE = "./public/src/index.jsx";
 const config = {
   entry: ENTRY_FILE,
   output: {
