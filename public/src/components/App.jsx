@@ -14,12 +14,14 @@ class App extends React.Component {
   selectProduct(event) {
     axios({
       method: "GET",
-      url: `/${event.target.value}`
-    }).then(data =>
-      this.setState({
-        currentProduct: data.data[0]
-      })
-    );
+      url: `http://node-express-env.bcgwijp6ik.us-east-2.elasticbeanstalk.com/`
+    }).then(console.log);
+    // .then(console.log);
+    // .then(data =>
+    //   this.setState({
+    //     currentProduct: data.data[0]
+    //   })
+    // );
   }
 
   render() {
