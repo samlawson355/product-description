@@ -24,6 +24,7 @@
 
 // Was in package.json
 // "start": "nodemon server/index.js",
+// "build": "webpack --mode production"
 
 const path = require("path");
 const DIST_FOLDER = path.join(__dirname, "/public/dist");
