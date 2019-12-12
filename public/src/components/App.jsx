@@ -13,15 +13,14 @@ class App extends React.Component {
 
   selectProduct(event) {
     axios
-      .get({
-        headers: {
-          "Access-Control-Allow-Origin": "*"
-        },
-        url: `http://node-express-env.bcgwijp6ik.us-east-2.elasticbeanstalk.com/${event.target.value}`
-      })
-      .then(console.log)
-      .catch(console.log)
-
+      .get(
+        `http://node-express-env.pd2fd7phmh.us-east-2.elasticbeanstalk.com/api/${event.target.value}`,
+        {
+          headers: {
+            "Access-Control-Allow-Origin": "*"
+          }
+        }
+      )
       .then(data =>
         this.setState({
           currentProduct: data.data[0]
