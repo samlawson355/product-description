@@ -12,7 +12,6 @@ const OrderByDates = props => {
               {props.orderByDateHours} {props.orderByDateMinutes}{" "}
               {props.orderByDateSeconds}
             </span>
-            .
           </div>
         </div>
       ) : (

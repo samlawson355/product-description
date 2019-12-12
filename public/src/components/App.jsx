@@ -41,7 +41,6 @@ class App extends React.Component {
   }
 
   render() {
-    console.log("test");
     return !this.state.currentProduct ? (
       <button onClick={this.selectProduct} value="68">
         Click for products
