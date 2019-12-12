@@ -47,7 +47,6 @@ class Report extends React.Component {
   render() {
     return (
       <span>
-        <div id="talkBubbleS"></div>
         <span id="reportInfoS">
           <a onClick={this.openReportModal}>
             Report incorrect product information.

@@ -1,8 +1,8 @@
 const express = require("express");
 const path = require("path");
 let app = express();
-const port = process.env.PORT;
-// const port = 7777;
+// const port = process.env.PORT;
+const port = 7777;
 const db = require("../database/index.js");
 // const axios = require("axios");
 

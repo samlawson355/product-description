@@ -11,6 +11,7 @@ class App extends React.Component {
     this.selectProduct = this.selectProduct.bind(this);
   }
 
+  // ! This is the proxy route
   // selectProduct(event) {
   //   axios
   //     .get(
@@ -42,7 +43,7 @@ class App extends React.Component {
   render() {
     console.log("test");
     return !this.state.currentProduct ? (
-      <button onClick={this.selectProduct} value="7">
+      <button onClick={this.selectProduct} value="68">
         Click for products
       </button>
     ) : (

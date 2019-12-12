@@ -97,13 +97,11 @@ class Description extends React.Component {
   }
 
   hourDateCleaner(hours) {
-    let cleanHours = hours.slice(3);
-    return cleanHours;
+    return hours.slice(3);
   }
 
   minuteDateCleaner(minutes) {
-    let cleanMinutes = minutes.slice(3);
-    return `and ${cleanMinutes}`;
+    return `and ${minutes.slice(3)}`;
   }
 
   availableOrNot() {
