@@ -11,7 +11,8 @@ class Description extends React.Component {
       inStock: null,
       wantItDate: null,
       orderByDateHours: null,
-      orderByDateMinutes: null
+      orderByDateMinutes: null,
+      orderByDateSeconds: null
     };
     this.descriptionCleaner = this.descriptionCleaner.bind(this);
     this.goToProductMaker = this.goToProductMaker.bind(this);
@@ -20,6 +21,7 @@ class Description extends React.Component {
     this.hourDateCleaner = this.hourDateCleaner.bind(this);
     this.minuteDateCleaner = this.minuteDateCleaner.bind(this);
     this.availableOrNot = this.availableOrNot.bind(this);
+    this.secondDateCleaner = this.secondDateCleaner.bind(this);
   }
 
   descriptionCleaner(desc) {
@@ -48,8 +50,8 @@ class Description extends React.Component {
   }
 
   dateMaker() {
+    // moment.relativeTimeThreshold("ss", 0);
     moment.relativeTimeThreshold("ss", 0);
-    moment.relativeTimeThreshold("s", 60);
     moment.relativeTimeThreshold("m", 60);
     moment.relativeTimeThreshold("h", 24);
     let date = moment()
@@ -62,7 +64,6 @@ class Description extends React.Component {
 
   orderByDate() {
     moment.relativeTimeThreshold("ss", 0);
-    moment.relativeTimeThreshold("s", 60);
     moment.relativeTimeThreshold("m", 60);
     moment.relativeTimeThreshold("h", 24);
     this.setState({
@@ -74,6 +75,11 @@ class Description extends React.Component {
       orderByDateMinutes: this.minuteDateCleaner(
         moment()
           .endOf("hour")
+          .fromNow()
+      ),
+      orderByDateSeconds: this.secondDateCleaner(
+        moment()
+          .endOf("minutes")
           .fromNow()
       )
     });
@@ -90,6 +96,11 @@ class Description extends React.Component {
             moment()
               .endOf("hour")
               .fromNow()
+          ),
+          orderByDateSeconds: this.secondDateCleaner(
+            moment()
+              .endOf("minutes")
+              .fromNow()
           )
         }),
       1000
@@ -101,7 +112,11 @@ class Description extends React.Component {
   }
 
   minuteDateCleaner(minutes) {
-    return `and ${minutes.slice(3)}`;
+    return `${minutes.slice(3)}`;
+  }
+
+  secondDateCleaner(seconds) {
+    return `and ${seconds.slice(3)}`;
   }
 
   availableOrNot() {
@@ -134,6 +149,7 @@ class Description extends React.Component {
           wantItDate={this.state.wantItDate}
           orderByDateHours={this.state.orderByDateHours}
           orderByDateMinutes={this.state.orderByDateMinutes}
+          orderByDateSeconds={this.state.orderByDateSeconds}
         />
       </div>
     );

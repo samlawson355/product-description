@@ -16,6 +16,7 @@ const BelowTheLine = props => {
         wantItDate={props.wantItDate}
         orderByDateHours={props.orderByDateHours}
         orderByDateMinutes={props.orderByDateMinutes}
+        orderByDateSeconds={props.orderByDateSeconds}
       />
       <DescriptionInformation
         currentProduct={props.currentProduct}
