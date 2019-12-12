@@ -11,33 +11,33 @@ class App extends React.Component {
     this.selectProduct = this.selectProduct.bind(this);
   }
 
-  selectProduct(event) {
-    axios
-      .get(
-        `http://node-express-env.pd2fd7phmh.us-east-2.elasticbeanstalk.com/api/${event.target.value}`,
-        {
-          headers: {
-            "Access-Control-Allow-Origin": "*"
-          }
-        }
-      )
-      .then(data =>
-        this.setState({
-          currentProduct: data.data[0]
-        })
-      );
-  }
-
   // selectProduct(event) {
-  //   axios({
-  //     method: "GET",
-  //     url: `/${event.target.value}`
-  //   }).then(data =>
-  //     this.setState({
-  //       currentProduct: data.data[0]
-  //     })
-  //   );
+  //   axios
+  //     .get(
+  //       `http://node-express-env.pd2fd7phmh.us-east-2.elasticbeanstalk.com/api/${event.target.value}`,
+  //       {
+  //         headers: {
+  //           "Access-Control-Allow-Origin": "*"
+  //         }
+  //       }
+  //     )
+  //     .then(data =>
+  //       this.setState({
+  //         currentProduct: data.data[0]
+  //       })
+  //     );
   // }
+
+  selectProduct(event) {
+    axios({
+      method: "GET",
+      url: `/${event.target.value}`
+    }).then(data =>
+      this.setState({
+        currentProduct: data.data[0]
+      })
+    );
+  }
 
   render() {
     console.log("test");
