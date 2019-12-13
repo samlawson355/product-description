@@ -181,6 +181,7 @@ a:hover {
 
 #productDescriptionLineContainerS ul,
 #productDescriptionLineContainerS li {
+  list-style: initial;
   padding-inline-start: 20px;
 }
 

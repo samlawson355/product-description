@@ -7,11 +7,7 @@ const DescriptionInformation = props => {
         {props
           .descriptionCleaner(props.currentProduct.productDesc)
           .map((line, id) => (
-            <li
-              key={id}
-              style={{ listStyle: "initial" }}
-              className="productDescriptionLineS"
-            >
+            <li key={id} className="productDescriptionLineS">
               {line}
             </li>
           ))}
