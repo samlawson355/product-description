@@ -32,27 +32,39 @@ class App extends React.Component {
   }
 
   // ! These are the proxy routes
-  // selectProduct(event) {
-  //   axios
-  //     .get(
-  //       `http://node-express-env.pd2fd7phmh.us-east-2.elasticbeanstalk.com/api/${event.target.value}`,
-  //       {
-  //         headers: {
-  //           "Access-Control-Allow-Origin": "*"
-  //         }
-  //       }
-  //     )
-  //     .then(data =>
-  //       this.setState({
-  //         currentProduct: data.data[0]
-  //       })
-  //     );
-  // }
+  selectProduct(event) {
+    axios
+      .get(
+        `http://node-express-env.pd2fd7phmh.us-east-2.elasticbeanstalk.com/api/${event.target.value}`,
+        {
+          headers: {
+            "Access-Control-Allow-Origin": "*"
+          }
+        }
+      )
+      .then(data =>
+        this.setState({
+          currentProduct: data.data[0]
+        })
+      );
+  }
 
-  // selectProductFromField(event) {
+  selectProductFromField(event) {
+    axios({
+      method: "GET",
+      url: `http://node-express-env.pd2fd7phmh.us-east-2.elasticbeanstalk.com/api/${event}`
+    }).then(data =>
+      this.setState({
+        currentProduct: data.data[0]
+      })
+    );
+  }
+
+  // ! These are the local routes
+  // selectProduct(event) {
   //   axios({
   //     method: "GET",
-  //     url: `http://node-express-env.pd2fd7phmh.us-east-2.elasticbeanstalk.com/api/${event}`
+  //     url: `/${event.target.value}`
   //   }).then(data =>
   //     this.setState({
   //       currentProduct: data.data[0]
@@ -60,28 +72,16 @@ class App extends React.Component {
   //   );
   // }
 
-  // ! These are the local routes
-  selectProduct(event) {
-    axios({
-      method: "GET",
-      url: `/${event.target.value}`
-    }).then(data =>
-      this.setState({
-        currentProduct: data.data[0]
-      })
-    );
-  }
-
-  selectProductFromField(event) {
-    axios({
-      method: "GET",
-      url: `/${event}`
-    }).then(data =>
-      this.setState({
-        currentProduct: data.data[0]
-      })
-    );
-  }
+  // selectProductFromField(event) {
+  //   axios({
+  //     method: "GET",
+  //     url: `/${event}`
+  //   }).then(data =>
+  //     this.setState({
+  //       currentProduct: data.data[0]
+  //     })
+  //   );
+  // }
 
   // getRating(event) {
   //   axios({
