@@ -8,7 +8,7 @@ class Description extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      inStock: null,
+      // inStock: null,
       wantItDate: null,
       orderByDateHours: null,
       orderByDateMinutes: null,
@@ -20,7 +20,7 @@ class Description extends React.Component {
     this.orderByDate = this.orderByDate.bind(this);
     this.hourDateCleaner = this.hourDateCleaner.bind(this);
     this.minuteDateCleaner = this.minuteDateCleaner.bind(this);
-    this.availableOrNot = this.availableOrNot.bind(this);
+    // this.availableOrNot = this.availableOrNot.bind(this);
     this.secondDateCleaner = this.secondDateCleaner.bind(this);
   }
 
@@ -168,17 +168,16 @@ class Description extends React.Component {
       : null;
   }
 
-  availableOrNot() {
-    let stock = [true, true, true, true, true, true, false];
-    this.setState({
-      inStock: stock[~~(Math.random() * stock.length)]
-    });
-  }
+  // availableOrNot() {
+  //   let stock = [true, true, true, true, true, true, false];
+  //   this.setState({
+  //     inStock: stock[~~(Math.random() * stock.length)]
+  //   });
+  // }
 
   componentDidMount() {
     this.dateMaker();
     this.orderByDate();
-    this.availableOrNot();
   }
 
   render() {
@@ -186,11 +185,13 @@ class Description extends React.Component {
       <div id="productDescriptionContainerS">
         <AboveTheLine
           currentProduct={this.props.currentProduct}
+          currentProductRating={this.props.currentProductRating}
           goToProductMaker={this.goToProductMaker}
+          flagToShow={this.props.flagToShow}
         />
         <div id="grayLineDividerS"></div>
         <BelowTheLine
-          inStock={this.state.inStock}
+          inStock={this.props.inStock}
           currentProduct={this.props.currentProduct}
           reportModal={this.props.reportModal}
           reportModalOpen={this.props.reportModalOpen}

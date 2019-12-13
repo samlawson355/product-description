@@ -10,7 +10,7 @@ class FlagAndDeals extends React.Component {
       showDeals: false,
       learnMoreModalOpen: false
     };
-    this.dealGetter = this.dealGetter.bind(this);
+    // this.dealGetter = this.dealGetter.bind(this);
     this.dealPopDown = this.dealPopDown.bind(this);
     this.dealGoBack = this.dealGoBack.bind(this);
     this.dealGoBackQuicker = this.dealGoBackQuicker.bind(this);
@@ -18,13 +18,13 @@ class FlagAndDeals extends React.Component {
     this.closeLearnMoreModal = this.closeLearnMoreModal.bind(this);
   }
 
-  dealGetter() {
-    let deals = [true, false];
-    let flagChooser = deals[~~(Math.random() * deals.length)];
-    this.setState({
-      flagToShow: flagChooser
-    });
-  }
+  // dealGetter() {
+  //   let deals = [true, false];
+  //   let flagChooser = deals[~~(Math.random() * deals.length)];
+  //   this.setState({
+  //     flagToShow: flagChooser
+  //   });
+  // }
 
   dealPopDown() {
     this.setState({
@@ -61,16 +61,12 @@ class FlagAndDeals extends React.Component {
     });
   }
 
-  componentDidMount() {
-    this.dealGetter();
-  }
-
   render() {
     return (
       <div id="flagAndDealsContainerS">
         <span id="textFlagDealContainerS">
           <span id="theFlagS">
-            {this.state.flagToShow ? (
+            {this.props.flagToShow ? (
               <span id="flagHolderS">
                 <span id="orangeFlagS">Extra Savings</span>
                 <span id="dealContainerS">
