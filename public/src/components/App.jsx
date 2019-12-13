@@ -9,6 +9,7 @@ class App extends React.Component {
       currentProduct: null
     };
     this.selectProduct = this.selectProduct.bind(this);
+    this.selectProductFromField = this.selectProductFromField.bind(this);
   }
 
   // ! This is the proxy route
@@ -40,13 +41,36 @@ class App extends React.Component {
     );
   }
 
+  selectProductFromField(event) {
+    axios({
+      method: "GET",
+      url: `/${event}`
+    }).then(data =>
+      this.setState({
+        currentProduct: data.data[0]
+      })
+    );
+  }
+
   render() {
     return !this.state.currentProduct ? (
-      <button onClick={this.selectProduct} value="68">
+      <button onClick={this.selectProduct} value={1}>
         Click for products
       </button>
     ) : (
-      <Description currentProduct={this.state.currentProduct} />
+      <div>
+        <input id="testInputFieldS"></input>
+        <button
+          onClick={() =>
+            this.selectProductFromField(
+              document.getElementById("testInputFieldS").value
+            )
+          }
+        >
+          go
+        </button>
+        <Description currentProduct={this.state.currentProduct} />
+      </div>
     );
   }
 }

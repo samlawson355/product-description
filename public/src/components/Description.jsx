@@ -170,11 +170,11 @@ class Description extends React.Component {
 
   availableOrNot() {
     let stock = [true, true, true, true, true, true, false];
-    let picker = stock[~~(Math.random() * stock.length)];
     this.setState({
-      inStock: picker
+      inStock: stock[~~(Math.random() * stock.length)]
     });
   }
+
   componentDidMount() {
     this.dateMaker();
     this.orderByDate();
