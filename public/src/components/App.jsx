@@ -25,7 +25,7 @@ class App extends React.Component {
     };
     // this.selectProduct = this.selectProduct.bind(this);
     this.selectProductFromField = this.selectProductFromField.bind(this);
-    this.getRating = this.getRating.bind(this);
+    // this.getRating = this.getRating.bind(this);
     this.getRatingFromInput = this.getRatingFromInput.bind(this);
     this.availableOrNot = this.availableOrNot.bind(this);
     this.dealGetter = this.dealGetter.bind(this);
@@ -49,10 +49,22 @@ class App extends React.Component {
   //     );
   // }
 
-  selectProductFromField(event) {
+  // selectProductFromField(event) {
+  //   axios({
+  //     method: "GET",
+  //     url: `http://node-express-env.pd2fd7phmh.us-east-2.elasticbeanstalk.com/api/${event}`
+  //   }).then(data =>
+  //     this.setState({
+  //       currentProduct: data.data[0]
+  //     })
+  //   );
+  // }
+
+  // ! These are the local routes
+  selectProduct(event) {
     axios({
       method: "GET",
-      url: `http://node-express-env.pd2fd7phmh.us-east-2.elasticbeanstalk.com/api/${event}`
+      url: `/${event.target.value}`
     }).then(data =>
       this.setState({
         currentProduct: data.data[0]
@@ -60,39 +72,27 @@ class App extends React.Component {
     );
   }
 
-  // ! These are the local routes
-  // selectProduct(event) {
-  //   axios({
-  //     method: "GET",
-  //     url: `/${event.target.value}`
-  //   }).then(data =>
-  //     this.setState({
-  //       currentProduct: data.data[0]
-  //     })
-  //   );
-  // }
-
-  // selectProductFromField(event) {
-  //   axios({
-  //     method: "GET",
-  //     url: `/${event}`
-  //   }).then(data =>
-  //     this.setState({
-  //       currentProduct: data.data[0]
-  //     })
-  //   );
-  // }
-
-  getRating(event) {
+  selectProductFromField(event) {
     axios({
       method: "GET",
-      url: `http://gammazonreviews.us-east-2.elasticbeanstalk.com/comments/${event.target.value}`
+      url: `/${event}`
     }).then(data =>
       this.setState({
-        currentProductRating: data.data[0].average
+        currentProduct: data.data[0]
       })
     );
   }
+
+  // getRating(event) {
+  //   axios({
+  //     method: "GET",
+  //     url: `http://gammazonreviews.us-east-2.elasticbeanstalk.com/comments/${event.target.value}`
+  //   }).then(data =>
+  //     this.setState({
+  //       currentProductRating: data.data[0].average
+  //     })
+  //   );
+  // }
 
   getRatingFromInput(event) {
     axios({
@@ -106,7 +106,6 @@ class App extends React.Component {
   }
 
   availableOrNot() {
-    console.log("avail");
     let stock = [true, true, true, true, true, false];
     this.setState({
       inStock: stock[~~(Math.random() * stock.length)]
@@ -114,7 +113,6 @@ class App extends React.Component {
   }
 
   dealGetter() {
-    console.log("running");
     let deals = [true, false];
     let flagChooser = deals[~~(Math.random() * deals.length)];
     this.setState({
@@ -123,10 +121,10 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    this.availableOrNot();
-    this.dealGetter();
     this.selectProductFromField(1);
     this.getRatingFromInput(1);
+    this.availableOrNot();
+    this.dealGetter();
   }
 
   render() {
