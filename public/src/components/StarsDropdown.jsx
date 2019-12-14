@@ -48,7 +48,7 @@ const StarsDropDown = props => (
               size="small"
             />
             <div id="ratingInsideDropdownS">
-              {props.currentProductRating} out of 5
+              {props.currentProduct.productRating} out of 5
             </div>
           </div>
         </div>

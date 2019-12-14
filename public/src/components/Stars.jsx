@@ -34,28 +34,56 @@ class Stars extends React.Component {
     );
   }
 
+  // starClean() {
+  //   if (this.props.currentProductRating >= 1) {
+  //     this.setState({
+  //       star1: true
+  //     });
+  //   }
+  //   if (this.props.currentProductRating >= 2) {
+  //     this.setState({
+  //       star2: true
+  //     });
+  //   }
+  //   if (this.props.currentProductRating >= 3) {
+  //     this.setState({
+  //       star3: true
+  //     });
+  //   }
+  //   if (this.props.currentProductRating >= 4) {
+  //     this.setState({
+  //       star4: true
+  //     });
+  //   }
+  //   if (this.props.currentProductRating === 5) {
+  //     this.setState({
+  //       star5: true
+  //     });
+  //   }
+  // }
+
   starClean() {
-    if (this.props.currentProductRating >= 1) {
+    if (this.props.currentProduct.productRating >= 1) {
       this.setState({
         star1: true
       });
     }
-    if (this.props.currentProductRating >= 2) {
+    if (this.props.currentProduct.productRating >= 2) {
       this.setState({
         star2: true
       });
     }
-    if (this.props.currentProductRating >= 3) {
+    if (this.props.currentProduct.productRating >= 3) {
       this.setState({
         star3: true
       });
     }
-    if (this.props.currentProductRating >= 4) {
+    if (this.props.currentProduct.productRating >= 4) {
       this.setState({
         star4: true
       });
     }
-    if (this.props.currentProductRating === 5) {
+    if (this.props.currentProduct.productRating === 5) {
       this.setState({
         star5: true
       });
@@ -122,7 +150,7 @@ class Stars extends React.Component {
             hoverDropDown={this.hoverDropDown}
             hoverGoBack={this.hoverGoBack}
             dropDownDisplayed={this.state.dropDownDisplayed}
-            currentProductRating={this.props.currentProductRating}
+            // currentProductRating={this.props.currentProductRating}
             productNumOfRatings={this.props.currentProduct.productNumOfRatings}
           />
         </div>

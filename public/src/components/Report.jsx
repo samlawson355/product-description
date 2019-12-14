@@ -64,6 +64,7 @@ class Report extends React.Component {
             />
             <div
               id="underReportBackgroundS"
+              className="testBackGroundS"
               onClick={this.closeReportModal}
             ></div>
           </div>

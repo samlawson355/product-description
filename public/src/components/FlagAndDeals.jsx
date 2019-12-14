@@ -88,6 +88,11 @@ class FlagAndDeals extends React.Component {
                   ) : null}
                   {this.state.learnMoreModalOpen ? (
                     <div id="outerLearnMoreModalContainerS">
+                      <div
+                        id="underLearnMoreBackgroundS"
+                        className="testBackGroundS"
+                        onClick={this.closeLearnMoreModal}
+                      ></div>
                       <LearnMoreModal
                         closeLearnMoreModal={this.closeLearnMoreModal}
                       />

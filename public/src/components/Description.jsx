@@ -185,7 +185,7 @@ class Description extends React.Component {
       <div id="productDescriptionContainerS">
         <AboveTheLine
           currentProduct={this.props.currentProduct}
-          currentProductRating={this.props.currentProductRating}
+          // currentProductRating={this.props.currentProductRating}
           goToProductMaker={this.goToProductMaker}
           flagToShow={this.props.flagToShow}
         />

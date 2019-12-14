@@ -19,40 +19,52 @@ class App extends React.Component {
         productPrice: 2.23,
         productRating: 4.4
       },
-      currentProductRating: null,
+      // currentProductRating: null,
       inStock: null,
       flagToShow: null
     };
     // this.selectProduct = this.selectProduct.bind(this);
     this.selectProductFromField = this.selectProductFromField.bind(this);
     // this.getRating = this.getRating.bind(this);
-    this.getRatingFromInput = this.getRatingFromInput.bind(this);
+    // this.getRatingFromInput = this.getRatingFromInput.bind(this);
     this.availableOrNot = this.availableOrNot.bind(this);
     this.dealGetter = this.dealGetter.bind(this);
   }
 
   // ! These are the proxy routes
-  selectProduct(event) {
-    axios
-      .get(
-        `http://node-express-env.pd2fd7phmh.us-east-2.elasticbeanstalk.com/api/${event.target.value}`,
-        {
-          headers: {
-            "Access-Control-Allow-Origin": "*"
-          }
-        }
-      )
-      .then(data =>
-        this.setState({
-          currentProduct: data.data[0]
-        })
-      );
-  }
+  // selectProduct(event) {
+  //   axios
+  //     .get(
+  //       `http://node-express-env.pd2fd7phmh.us-east-2.elasticbeanstalk.com/api/${event.target.value}`,
+  //       {
+  //         headers: {
+  //           "Access-Control-Allow-Origin": "*"
+  //         }
+  //       }
+  //     )
+  //     .then(data =>
+  //       this.setState({
+  //         currentProduct: data.data[0]
+  //       })
+  //     );
+  // }
 
-  selectProductFromField(event) {
+  // selectProductFromField(event) {
+  //   axios({
+  //     method: "GET",
+  //     url: `http://node-express-env.pd2fd7phmh.us-east-2.elasticbeanstalk.com/api/${event}`
+  //   }).then(data =>
+  //     this.setState({
+  //       currentProduct: data.data[0]
+  //     })
+  //   );
+  // }
+
+  // ! These are the local routes
+  selectProduct(event) {
     axios({
       method: "GET",
-      url: `http://node-express-env.pd2fd7phmh.us-east-2.elasticbeanstalk.com/api/${event}`
+      url: `/${event.target.value}`
     }).then(data =>
       this.setState({
         currentProduct: data.data[0]
@@ -60,28 +72,16 @@ class App extends React.Component {
     );
   }
 
-  // ! These are the local routes
-  // selectProduct(event) {
-  //   axios({
-  //     method: "GET",
-  //     url: `/${event.target.value}`
-  //   }).then(data =>
-  //     this.setState({
-  //       currentProduct: data.data[0]
-  //     })
-  //   );
-  // }
-
-  // selectProductFromField(event) {
-  //   axios({
-  //     method: "GET",
-  //     url: `/${event}`
-  //   }).then(data =>
-  //     this.setState({
-  //       currentProduct: data.data[0]
-  //     })
-  //   );
-  // }
+  selectProductFromField(event) {
+    axios({
+      method: "GET",
+      url: `/${event}`
+    }).then(data =>
+      this.setState({
+        currentProduct: data.data[0]
+      })
+    );
+  }
 
   // getRating(event) {
   //   axios({
@@ -94,16 +94,16 @@ class App extends React.Component {
   //   );
   // }
 
-  getRatingFromInput(event) {
-    axios({
-      method: "GET",
-      url: `http://gammazonreviews.us-east-2.elasticbeanstalk.com/comments/${event}`
-    }).then(data =>
-      this.setState({
-        currentProductRating: data.data[0].average
-      })
-    );
-  }
+  // getRatingFromInput(event) {
+  //   axios({
+  //     method: "GET",
+  //     url: `http://gammazonreviews.us-east-2.elasticbeanstalk.com/comments/${event}`
+  //   }).then(data =>
+  //     this.setState({
+  //       currentProductRating: data.data[0].average
+  //     })
+  //   );
+  // }
 
   availableOrNot() {
     let stock = [true, true, true, true, true, false];
@@ -122,7 +122,7 @@ class App extends React.Component {
 
   componentDidMount() {
     this.selectProductFromField(1);
-    this.getRatingFromInput(1);
+    // this.getRatingFromInput(1);
     this.availableOrNot();
     this.dealGetter();
   }
@@ -136,9 +136,9 @@ class App extends React.Component {
             this.selectProductFromField(
               document.getElementById("testInputFieldS").value
             );
-            this.getRatingFromInput(
-              document.getElementById("testInputFieldS").value
-            );
+            // this.getRatingFromInput(
+            //   document.getElementById("testInputFieldS").value
+            // );
             this.availableOrNot();
             this.dealGetter();
           }}
@@ -150,7 +150,7 @@ class App extends React.Component {
           availableOrNot={this.availableOrNot}
           inStock={this.state.inStock}
           currentProduct={this.state.currentProduct}
-          currentProductRating={this.state.currentProductRating}
+          // currentProductRating={this.state.currentProductRating}
         />
       </div>
     );
