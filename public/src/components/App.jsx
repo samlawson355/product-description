@@ -129,6 +129,7 @@ class App extends React.Component {
     let croppedID = idText.substring(idText.indexOf("=") + 1);
 
     croppedID = +croppedID;
+
     this.state.id
       ? null
       : this.setState(
@@ -148,11 +149,13 @@ class App extends React.Component {
                   },
                   () => {
                     this.getRatingFromInput(this.state.id);
-                    this.availableOrNot();
-                    this.dealGetter();
                   }
                 )
-              );
+              )
+              .then(() => {
+                this.availableOrNot();
+                this.dealGetter();
+              });
 
             // this.selectProductFromField(this.state.id);
           }
