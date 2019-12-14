@@ -14,31 +14,11 @@ class App extends React.Component {
     };
     this.getId = this.getId.bind(this);
     this.defaultGet = this.defaultGet.bind(this);
-    // this.selectProduct = this.selectProduct.bind(this);
     this.selectProductFromField = this.selectProductFromField.bind(this);
-    // this.getRating = this.getRating.bind(this);
     this.getRatingFromInput = this.getRatingFromInput.bind(this);
     this.availableOrNot = this.availableOrNot.bind(this);
     this.dealGetter = this.dealGetter.bind(this);
   }
-
-  // ! These are the proxy routes
-  // selectProduct(event) {
-  //   axios
-  //     .get(
-  //       `http://node-express-env.pd2fd7phmh.us-east-2.elasticbeanstalk.com/api/${event.target.value}`,
-  //       {
-  //         headers: {
-  //           "Access-Control-Allow-Origin": "*"
-  //         }
-  //       }
-  //     )
-  //     .then(data =>
-  //       this.setState({
-  //         currentProduct: data.data[0]
-  //       })
-  //     );
-  // }
 
   selectProductFromField(event) {
     axios({
@@ -81,9 +61,7 @@ class App extends React.Component {
   getId() {
     let idText = window.location.search;
     let croppedID = idText.substring(idText.indexOf("=") + 1);
-
     croppedID = +croppedID;
-
     this.getRatingFromInput(croppedID);
     this.selectProductFromField(croppedID);
     this.availableOrNot();
