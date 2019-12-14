@@ -51,16 +51,16 @@ class App extends React.Component {
   //     );
   // }
 
-  // selectProductFromField(event) {
-  //   axios({
-  //     method: "GET",
-  //     url: `http://node-express-env.pd2fd7phmh.us-east-2.elasticbeanstalk.com/api/${event}`
-  //   }).then(data =>
-  //     this.setState({
-  //       currentProduct: data.data[0]
-  //     })
-  //   );
-  // }
+  selectProductFromField(event) {
+    axios({
+      method: "GET",
+      url: `http://node-express-env.pd2fd7phmh.us-east-2.elasticbeanstalk.com/api/${event}`
+    }).then(data =>
+      this.setState({
+        currentProduct: data.data[0]
+      })
+    );
+  }
 
   // ! These are the local routes
   // selectProduct(event) {
@@ -74,16 +74,16 @@ class App extends React.Component {
   //   );
   // }
 
-  selectProductFromField(event) {
-    axios({
-      method: "GET",
-      url: `/${event}`
-    }).then(data =>
-      this.setState({
-        currentProduct: data.data[0]
-      })
-    );
-  }
+  // selectProductFromField(event) {
+  //   axios({
+  //     method: "GET",
+  //     url: `/${event}`
+  //   }).then(data =>
+  //     this.setState({
+  //       currentProduct: data.data[0]
+  //     })
+  //   );
+  // }
 
   // getRating(event) {
   //   axios({

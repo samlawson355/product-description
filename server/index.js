@@ -1,14 +1,14 @@
 const express = require("express");
 const path = require("path");
 let app = express();
-const port = process.env.PORT;
-// const port = 7777;
+// const port = process.env.PORT;
+const port = 7777;
 const db = require("../database/index.js");
 
 app.use(express.static(path.join(__dirname, "../public/dist")));
 app.use(express.json());
 
-app.get(`/:id`, (req, res) => {
+app.get("/:id", (req, res) => {
   let id = req.params.id;
   db.getProduct(id, (err, results) => {
     if (err) {
