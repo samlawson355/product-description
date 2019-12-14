@@ -392,7 +392,7 @@ a:hover {
   background-color: white;
   border: 2px solid rgb(184, 181, 181);
   width: 270px;
-  height: 135px;
+  height: auto;
   border-radius: 4px;
 }
 
