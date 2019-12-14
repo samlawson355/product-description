@@ -6,6 +6,7 @@ class Stars extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      // currentProductRating: null,
       dropDownDisplayed: false,
       star1: false,
       star2: false,
@@ -34,61 +35,63 @@ class Stars extends React.Component {
     );
   }
 
+  starClean() {
+    setTimeout(() => {
+      if (this.props.currentProductRating >= 1) {
+        this.setState({
+          star1: true
+        });
+      }
+      if (this.props.currentProductRating >= 2) {
+        this.setState({
+          star2: true
+        });
+      }
+      if (this.props.currentProductRating >= 3) {
+        this.setState({
+          star3: true
+        });
+      }
+      if (this.props.currentProductRating >= 4) {
+        this.setState({
+          star4: true
+        });
+      }
+      if (this.props.currentProductRating === 5) {
+        this.setState({
+          star5: true
+        });
+      }
+    }, 500);
+  }
+
   // starClean() {
-  //   if (this.props.currentProductRating >= 1) {
+  //   if (this.props.currentProduct.productRating >= 1) {
   //     this.setState({
   //       star1: true
   //     });
   //   }
-  //   if (this.props.currentProductRating >= 2) {
+  //   if (this.props.currentProduct.productRating >= 2) {
   //     this.setState({
   //       star2: true
   //     });
   //   }
-  //   if (this.props.currentProductRating >= 3) {
+  //   if (this.props.currentProduct.productRating >= 3) {
   //     this.setState({
   //       star3: true
   //     });
   //   }
-  //   if (this.props.currentProductRating >= 4) {
+  //   if (this.props.currentProduct.productRating >= 4) {
   //     this.setState({
   //       star4: true
   //     });
   //   }
-  //   if (this.props.currentProductRating === 5) {
+  //   if (this.props.currentProduct.productRating === 5) {
   //     this.setState({
   //       star5: true
   //     });
   //   }
   // }
-
-  starClean() {
-    if (this.props.currentProduct.productRating >= 1) {
-      this.setState({
-        star1: true
-      });
-    }
-    if (this.props.currentProduct.productRating >= 2) {
-      this.setState({
-        star2: true
-      });
-    }
-    if (this.props.currentProduct.productRating >= 3) {
-      this.setState({
-        star3: true
-      });
-    }
-    if (this.props.currentProduct.productRating >= 4) {
-      this.setState({
-        star4: true
-      });
-    }
-    if (this.props.currentProduct.productRating === 5) {
-      this.setState({
-        star5: true
-      });
-    }
-  }
 
   componentDidMount() {
     this.starClean();
@@ -97,48 +100,50 @@ class Stars extends React.Component {
   render() {
     return (
       <div>
-        <div id="starsContainerS" onMouseEnter={this.hoverDropDown}>
-          <Rating
-            name="numOfStarsS"
-            value={this.state.star1 ? 1 : 0}
-            readOnly={true}
-            precision={1}
-            max={1}
-            size="small"
-          />
-          <Rating
-            name="numOfStarsS"
-            value={this.state.star2 ? 1 : 0}
-            readOnly={true}
-            precision={1}
-            max={1}
-            size="small"
-          />
-          <Rating
-            name="numOfStarsS"
-            value={this.state.star3 ? 1 : 0}
-            readOnly={true}
-            precision={1}
-            max={1}
-            size="small"
-          />
-          <Rating
-            name="numOfStarsS"
-            value={this.state.star4 ? 1 : 0}
-            readOnly={true}
-            precision={1}
-            max={1}
-            size="small"
-          />
-          <Rating
-            name="numOfStarsS"
-            value={this.state.star5 ? 1 : 0}
-            readOnly={true}
-            precision={1}
-            max={1}
-            size="small"
-          />
-        </div>
+        {this.props.currentProductRating ? (
+          <div id="starsContainerS" onMouseEnter={this.hoverDropDown}>
+            <Rating
+              name="numOfStarsS"
+              value={this.state.star1 ? 1 : 0}
+              readOnly={true}
+              precision={1}
+              max={1}
+              size="small"
+            />
+            <Rating
+              name="numOfStarsS"
+              value={this.state.star2 ? 1 : 0}
+              readOnly={true}
+              precision={1}
+              max={1}
+              size="small"
+            />
+            <Rating
+              name="numOfStarsS"
+              value={this.state.star3 ? 1 : 0}
+              readOnly={true}
+              precision={1}
+              max={1}
+              size="small"
+            />
+            <Rating
+              name="numOfStarsS"
+              value={this.state.star4 ? 1 : 0}
+              readOnly={true}
+              precision={1}
+              max={1}
+              size="small"
+            />
+            <Rating
+              name="numOfStarsS"
+              value={this.state.star5 ? 1 : 0}
+              readOnly={true}
+              precision={1}
+              max={1}
+              size="small"
+            />
+          </div>
+        ) : null}
         <div>
           <StarsDropdown
             currentProduct={this.props.currentProduct}
@@ -150,7 +155,7 @@ class Stars extends React.Component {
             hoverDropDown={this.hoverDropDown}
             hoverGoBack={this.hoverGoBack}
             dropDownDisplayed={this.state.dropDownDisplayed}
-            // currentProductRating={this.props.currentProductRating}
+            currentProductRating={this.props.currentProductRating}
             productNumOfRatings={this.props.currentProduct.productNumOfRatings}
           />
         </div>

@@ -16,17 +16,17 @@ class App extends React.Component {
           "Nestle Pure Life Purified Water, 16.9 fl oz. Plastic Bottles (12 count)",
         productNumOfQuestionsAnswered: 118,
         productNumOfRatings: 1278,
-        productPrice: 2.23,
-        productRating: 4.4
+        productPrice: 2.23
+        // productRating: 4.4
       },
-      // currentProductRating: null,
+      currentProductRating: null,
       inStock: null,
       flagToShow: null
     };
     // this.selectProduct = this.selectProduct.bind(this);
     this.selectProductFromField = this.selectProductFromField.bind(this);
     // this.getRating = this.getRating.bind(this);
-    // this.getRatingFromInput = this.getRatingFromInput.bind(this);
+    this.getRatingFromInput = this.getRatingFromInput.bind(this);
     this.availableOrNot = this.availableOrNot.bind(this);
     this.dealGetter = this.dealGetter.bind(this);
   }
@@ -94,16 +94,17 @@ class App extends React.Component {
   //   );
   // }
 
-  // getRatingFromInput(event) {
-  //   axios({
-  //     method: "GET",
-  //     url: `http://gammazonreviews.us-east-2.elasticbeanstalk.com/comments/${event}`
-  //   }).then(data =>
-  //     this.setState({
-  //       currentProductRating: data.data[0].average
-  //     })
-  //   );
-  // }
+  getRatingFromInput(event) {
+    console.log("get rating run");
+    axios({
+      method: "GET",
+      url: `http://gammazonreviews.us-east-2.elasticbeanstalk.com/comments/${event}`
+    }).then(data =>
+      this.setState({
+        currentProductRating: data.data[0].average
+      })
+    );
+  }
 
   availableOrNot() {
     let stock = [true, true, true, true, true, false];
@@ -122,7 +123,7 @@ class App extends React.Component {
 
   componentDidMount() {
     this.selectProductFromField(1);
-    // this.getRatingFromInput(1);
+    this.getRatingFromInput(1);
     this.availableOrNot();
     this.dealGetter();
   }
@@ -136,9 +137,9 @@ class App extends React.Component {
             this.selectProductFromField(
               document.getElementById("testInputFieldS").value
             );
-            // this.getRatingFromInput(
-            //   document.getElementById("testInputFieldS").value
-            // );
+            this.getRatingFromInput(
+              document.getElementById("testInputFieldS").value
+            );
             this.availableOrNot();
             this.dealGetter();
           }}
@@ -150,7 +151,7 @@ class App extends React.Component {
           availableOrNot={this.availableOrNot}
           inStock={this.state.inStock}
           currentProduct={this.state.currentProduct}
-          // currentProductRating={this.state.currentProductRating}
+          currentProductRating={this.state.currentProductRating}
         />
       </div>
     );

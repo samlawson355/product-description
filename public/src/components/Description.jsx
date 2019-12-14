@@ -51,13 +51,6 @@ class Description extends React.Component {
     });
   }
 
-  // availableOrNot() {
-  //   let stock = [true, true, true, true, true, true, false];
-  //   this.setState({
-  //     inStock: stock[~~(Math.random() * stock.length)]
-  //   });
-  // }
-
   componentDidMount() {
     this.dateMaker();
   }
@@ -67,7 +60,7 @@ class Description extends React.Component {
       <div id="productDescriptionContainerS">
         <AboveTheLine
           currentProduct={this.props.currentProduct}
-          // currentProductRating={this.props.currentProductRating}
+          currentProductRating={this.props.currentProductRating}
           goToProductMaker={this.goToProductMaker}
           flagToShow={this.props.flagToShow}
         />
