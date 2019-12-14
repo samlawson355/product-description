@@ -172,39 +172,6 @@ class App extends React.Component {
       </div>
     ) : null;
   }
-  // render() {
-  //   return !this.state.currentProduct ? (
-  //     <button
-  //       onClick={e => {
-  //         this.selectProduct(e);
-  //         this.getRating(e);
-  //       }}
-  //       value={1}
-  //     >
-  //       Click for products
-  //     </button>
-  //   ) : (
-  //     <div>
-  //       <input id="testInputFieldS"></input>
-  //   <button
-  //     onClick={() => {
-  //       this.selectProductFromField(
-  //         document.getElementById("testInputFieldS").value
-  //       );
-  //       this.getRatingFromInput(
-  //         document.getElementById("testInputFieldS").value
-  //       );
-  //     }}
-  //   >
-  //   go
-  // </button>
-  //       <Description
-  //         currentProduct={this.state.currentProduct}
-  //         currentProductRating={this.state.currentProductRating}
-  //       />
-  //     </div>
-  //   );
-  // }
 }
 
 export default App;
