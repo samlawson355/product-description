@@ -8,19 +8,6 @@ class App extends React.Component {
     this.state = {
       // id: null,
       currentProduct: null,
-      // currentProduct: {
-      //   id: 1,
-      //   productCategory: "Prime Pantry",
-      //   productDesc:
-      //     "New look, same 100 Percent pure quality water++.5 liter / 16.9 ounce easy to grip, resealable plastic bottled water that's perfect for lunch, or to bring to work or class++12 pack to keep at home or the office to promote healthy hydration++With no calories and no sweeteners, water is a smart alternative to sugary drinks++Consistently clean and great tasting water with our rigorous 12 step quality process. All of our PET bottles are recyclable. Once recycled, they’ll be cleaned, dried and melted ...",
-      //   productMaker: "Nestlé Pure Life",
-      //   productName:
-      //     "Nestle Pure Life Purified Water, 16.9 fl oz. Plastic Bottles (12 count)",
-      //   productNumOfQuestionsAnswered: 118,
-      //   productNumOfRatings: 1278,
-      //   productPrice: 2.23
-      //   // productRating: 4.4
-      // },
       currentProductRating: null,
       inStock: null,
       flagToShow: null
@@ -64,40 +51,6 @@ class App extends React.Component {
     );
   }
 
-  // ! These are the local routes
-  // selectProduct(event) {
-  //   axios({
-  //     method: "GET",
-  //     url: `/${event.target.value}`
-  //   }).then(data =>
-  //     this.setState({
-  //       currentProduct: data.data[0]
-  //     })
-  //   );
-  // }
-
-  // selectProductFromField(event) {
-  //   axios({
-  //     method: "GET",
-  //     url: `/${event}`
-  //   }).then(data =>
-  //     this.setState({
-  //       currentProduct: data.data[0]
-  //     })
-  //   );
-  // }
-
-  // getRating(event) {
-  //   axios({
-  //     method: "GET",
-  //     url: `http://gammazonreviews.us-east-2.elasticbeanstalk.com/comments/${event.target.value}`
-  //   }).then(data =>
-  //     this.setState({
-  //       currentProductRating: data.data[0].average
-  //     })
-  //   );
-  // }
-
   getRatingFromInput(event) {
     axios({
       method: "GET",
@@ -130,11 +83,7 @@ class App extends React.Component {
     let croppedID = idText.substring(idText.indexOf("=") + 1);
 
     croppedID = +croppedID;
-    // this.state.id
-    //   ? null
-    //   : this.setState({
-    //       id: croppedID
-    //     });
+
     this.getRatingFromInput(croppedID);
     this.selectProductFromField(croppedID);
     this.availableOrNot();
