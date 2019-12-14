@@ -6,7 +6,6 @@ class Stars extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      // currentProductRating: null,
       dropDownDisplayed: false,
       star1: false,
       star2: false,
