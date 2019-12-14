@@ -10,6 +10,7 @@ class Hours extends React.Component {
     this.hourDateCleaner = this.hourDateCleaner.bind(this);
     this.orderByDateHoursFunction = this.orderByDateHoursFunction.bind(this);
   }
+
   orderByDateHoursFunction() {
     moment.relativeTimeThreshold("ss", 0);
     moment.relativeTimeThreshold("m", 60);
