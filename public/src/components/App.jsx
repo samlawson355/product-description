@@ -25,6 +25,8 @@ class App extends React.Component {
       inStock: null,
       flagToShow: null
     };
+    this.getId = this.getId.bind(this);
+    this.defaultGet = this.defaultGet.bind(this);
     // this.selectProduct = this.selectProduct.bind(this);
     this.selectProductFromField = this.selectProductFromField.bind(this);
     // this.getRating = this.getRating.bind(this);
@@ -139,8 +141,15 @@ class App extends React.Component {
     this.dealGetter();
   }
 
+  defaultGet() {
+    this.getRatingFromInput(1);
+    this.selectProductFromField(1);
+    this.availableOrNot();
+    this.dealGetter();
+  }
+
   componentDidMount() {
-    this.getId();
+    window.location.search ? this.getId() : this.defaultGet();
   }
 
   render() {
