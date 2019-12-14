@@ -6,7 +6,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      id: null,
+      // id: null,
       currentProduct: null,
       // currentProduct: {
       //   id: 1,
@@ -128,19 +128,15 @@ class App extends React.Component {
     let croppedID = idText.substring(idText.indexOf("=") + 1);
 
     croppedID = +croppedID;
-    this.state.id
-      ? null
-      : this.setState(
-          {
-            id: croppedID
-          },
-          () => this.selectProductFromField(croppedID)
-        )
-          .then(this.getRatingFromInput(croppedID))
-          .then(() => {
-            this.availableOrNot();
-            this.dealGetter();
-          });
+    // this.state.id
+    //   ? null
+    //   : this.setState({
+    //       id: croppedID
+    //     });
+    this.selectProductFromField(croppedID);
+    this.getRatingFromInput(croppedID);
+    this.availableOrNot();
+    this.dealGetter();
   }
 
   componentDidMount() {
