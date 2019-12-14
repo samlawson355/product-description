@@ -129,6 +129,7 @@ class App extends React.Component {
   }
 
   render() {
+    console.log(window.location.search);
     return (
       <div>
         <input id="testInputFieldS"></input>
