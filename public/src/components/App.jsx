@@ -133,8 +133,8 @@ class App extends React.Component {
     //   : this.setState({
     //       id: croppedID
     //     });
-    this.selectProductFromField(croppedID);
     this.getRatingFromInput(croppedID);
+    this.selectProductFromField(croppedID);
     this.availableOrNot();
     this.dealGetter();
   }
