@@ -110,6 +110,7 @@ class App extends React.Component {
   }
 
   availableOrNot() {
+    console.log("run");
     let stock = [true, true, true, true, true, false];
     this.setState({
       inStock: stock[~~(Math.random() * stock.length)]
@@ -124,42 +125,28 @@ class App extends React.Component {
     });
   }
 
-  componentDidMount() {
+  getId() {
     let idText = window.location.search;
     let croppedID = idText.substring(idText.indexOf("=") + 1);
 
     croppedID = +croppedID;
-
     this.state.id
       ? null
       : this.setState(
           {
             id: croppedID
           },
-          () => {
-            axios({
-              method: "GET",
-              url: `/${croppedID}`
-            })
-              // .then(console.log)
-              .then(data =>
-                this.setState(
-                  {
-                    currentProduct: data.data[0]
-                  },
-                  () => {
-                    this.getRatingFromInput(this.state.id);
-                  }
-                )
-              )
-              .then(() => {
-                this.availableOrNot();
-                this.dealGetter();
-              });
+          () => this.selectProductFromField(croppedID)
+        )
+          .then(this.getRatingFromInput(croppedID))
+          .then(() => {
+            this.availableOrNot();
+            this.dealGetter();
+          });
+  }
 
-            // this.selectProductFromField(this.state.id);
-          }
-        );
+  componentDidMount() {
+    this.getId();
   }
 
   render() {
