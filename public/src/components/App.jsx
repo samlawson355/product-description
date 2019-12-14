@@ -78,13 +78,11 @@ class App extends React.Component {
     axios({
       method: "GET",
       url: `/${event}`
-    })
-      .then(console.log)
-      .then(data =>
-        this.setState({
-          currentProduct: data.data[0]
-        })
-      );
+    }).then(data =>
+      this.setState({
+        currentProduct: data.data[0]
+      })
+    );
   }
 
   // getRating(event) {
