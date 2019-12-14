@@ -566,7 +566,7 @@ a:hover {
 
 #outerLearnMoreModalContainerS {
   position: fixed;
-  left: 0;
+  left: -131px;
   top: 144px;
   width: 400px;
   height: 600px;
