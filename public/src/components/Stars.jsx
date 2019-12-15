@@ -155,6 +155,7 @@ class Stars extends React.Component {
             hoverGoBack={this.hoverGoBack}
             dropDownDisplayed={this.state.dropDownDisplayed}
             currentProductRating={this.props.currentProductRating}
+            commentInfo={this.props.commentInfo}
             productNumOfRatings={this.props.currentProduct.productNumOfRatings}
           />
         </div>

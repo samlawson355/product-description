@@ -20,6 +20,7 @@ const AboveTheLine = props => {
       </div>
       <span id="starsRatingsQuestionsContainerS">
         <Stars
+          commentInfo={props.commentInfo}
           currentProduct={props.currentProduct}
           currentProductRating={props.currentProductRating}
         />

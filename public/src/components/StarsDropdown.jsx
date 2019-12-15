@@ -48,8 +48,7 @@ const StarsDropDown = props => (
               size="small"
             />
             <div id="ratingInsideDropdownS">
-              {/* {props.currentProduct.productRating} out of 5 */}
-              {props.currentProductRating} out of 5
+              {Math.round(props.currentProductRating * 100) / 100} out of 5
             </div>
           </div>
         </div>

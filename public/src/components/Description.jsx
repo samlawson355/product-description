@@ -59,6 +59,7 @@ class Description extends React.Component {
     return (
       <div id="productDescriptionContainerS">
         <AboveTheLine
+          commentInfo={this.props.commentInfo}
           currentProduct={this.props.currentProduct}
           currentProductRating={this.props.currentProductRating}
           goToProductMaker={this.goToProductMaker}
