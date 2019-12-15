@@ -129,9 +129,10 @@ const StarsDropDown = props => (
         <div id="seeCustomerReviewsS">
           <a
             id="seeAllLinkS"
-            onClick={() => {
-              window.scrollTo(0, 1200);
-            }}
+            href="#customerreviews"
+            // onClick={() => {
+            //   window.scrollTo(0, 1200);
+            // }}
           >
             See all customer reviews
           </a>
