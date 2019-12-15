@@ -130,7 +130,7 @@ const StarsDropDown = props => (
           <a
             id="seeAllLinkS"
             onClick={() => {
-              window.scrollTo(0, 500);
+              window.scrollTo(0, 1200);
             }}
           >
             See all customer reviews
