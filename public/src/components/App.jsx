@@ -6,7 +6,6 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      // id: null,
       currentProduct: null,
       currentProductRating: null,
       individualRatings: null,

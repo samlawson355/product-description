@@ -48,9 +48,12 @@ const StarsDropDown = props => (
               size="small"
             />
             <div id="ratingInsideDropdownS">
-              {Math.round(props.currentProductRating * 100) / 100} out of 5
+              {~~(Math.round(props.currentProductRating * 100) / 100)} out of 5
             </div>
           </div>
+        </div>
+        <div id="numOfRatingsInDropdownS">
+          <div>{props.currentProduct.productNumOfRatings} customer ratings</div>
         </div>
         <div>
           <div id="ratingBarContainerS">
@@ -122,6 +125,7 @@ const StarsDropDown = props => (
             </div>
           </div>
         </div>
+        <div id="grayLineDivider2S"></div>
       </div>
     ) : null}
   </div>
