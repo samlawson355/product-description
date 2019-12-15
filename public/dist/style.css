@@ -670,3 +670,45 @@ a:hover {
 #newFromPriceWordS {
   color: #b12704;
 }
+
+#ratingBarContainerS {
+  display: flex;
+  flex-direction: column;
+}
+
+.outerRatingBarContainerS {
+  width: auto;
+  display: flex;
+  justify-content: space-around;
+  margin-left: -30px;
+}
+
+.testRatingBarContainerS {
+  float: left;
+  margin-top: 5px;
+  margin-left: -30px;
+  background-image: linear-gradient(to bottom, #eee, #f6f6f6);
+  width: 225px;
+  height: 15px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.4),
+    inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.testRatingBarsS {
+  height: 100%;
+  background-image: linear-gradient(to bottom, #ffce00, #ffa700);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.25),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.05);
+  transition: width 0.5s;
+}
+
+.numericalRatingS {
+  padding-top: 3px;
+  font-size: small;
+}
+
+.percentageRatingS {
+  padding-top: 3px;
+  font-size: small;
+  margin-left: -20px;
+}
