@@ -9,7 +9,7 @@ class App extends React.Component {
       // id: null,
       currentProduct: null,
       currentProductRating: null,
-      commentInfo: null,
+      individualRatings: null,
       inStock: null,
       flagToShow: null
     };
@@ -36,14 +36,12 @@ class App extends React.Component {
     axios({
       method: "GET",
       url: `http://gammazonreviews.us-east-2.elasticbeanstalk.com/comments/${event}`
-    })
-      // .then(console.log)
-      .then(data =>
-        this.setState({
-          currentProductRating: data.data[0].average,
-          commentInfo: data.data[0]
-        })
-      );
+    }).then(data =>
+      this.setState({
+        currentProductRating: data.data[0].average,
+        individualRatings: data.data[0].individualRatings
+      })
+    );
   }
 
   availableOrNot() {
@@ -92,7 +90,7 @@ class App extends React.Component {
           inStock={this.state.inStock}
           currentProduct={this.state.currentProduct}
           currentProductRating={this.state.currentProductRating}
-          commentInfo={this.state.commentInfo}
+          individualRatings={this.state.individualRatings}
         />
       </div>
     ) : null;

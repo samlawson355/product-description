@@ -52,6 +52,15 @@ const StarsDropDown = props => (
             </div>
           </div>
         </div>
+        <div>
+          <div id="ratingBarContainerS">
+            <div id="ratingBar1S">{props.bar1} bar1</div>
+            <div id="ratingBar2S">{props.bar2} bar2</div>
+            <div id="ratingBar3S">{props.bar3} bar3</div>
+            <div id="ratingBar4S">{props.bar4} bar4</div>
+            <div id="ratingBar5S">{props.bar5} bar5</div>
+          </div>
+        </div>
       </div>
     ) : null}
   </div>
