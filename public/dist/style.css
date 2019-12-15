@@ -724,3 +724,13 @@ a:hover {
   font-size: small;
   color: rgb(143, 143, 143);
 }
+#seeCustomerReviewsS {
+  text-align: center;
+  margin-top: 10%;
+  margin-left: -49px;
+  height: 50px;
+}
+
+#seeAllLinkS {
+  font-size: small;
+}
