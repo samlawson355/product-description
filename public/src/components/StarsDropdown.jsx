@@ -53,7 +53,10 @@ const StarsDropDown = props => (
           </div>
         </div>
         <div id="numOfRatingsInDropdownS">
-          <div>{props.currentProduct.productNumOfRatings} customer ratings</div>
+          <div>
+            {props.currentProduct.productNumOfRatings.toLocaleString()} customer
+            ratings
+          </div>
         </div>
         <div>
           <div id="ratingBarContainerS">
