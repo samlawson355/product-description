@@ -127,13 +127,7 @@ const StarsDropDown = props => (
         </div>
         <div id="grayLineDivider2S"></div>
         <div id="seeCustomerReviewsS">
-          <a
-            id="seeAllLinkS"
-            href="#customerreviews"
-            // onClick={() => {
-            //   window.scrollTo(0, 1200);
-            // }}
-          >
+          <a id="seeAllLinkS" href="#customerreviews">
             See all customer reviews
           </a>
         </div>
