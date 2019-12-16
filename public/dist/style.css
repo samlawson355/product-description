@@ -150,6 +150,7 @@ a:hover {
 }
 #grayLineDivider2S {
   width: 92%;
+  z-index: 101;
   margin-top: 17px;
   border-bottom: solid 0.5px rgb(218, 218, 218);
 }
