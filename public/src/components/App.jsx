@@ -44,7 +44,6 @@ class App extends React.Component {
   }
 
   availableOrNot() {
-    console.log("run");
     let stock = [true, true, true, true, true, false];
     this.setState({
       inStock: stock[~~(Math.random() * stock.length)]
